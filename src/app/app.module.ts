@@ -7,6 +7,10 @@ import { AppComponent } from './app.component';
 import {LandingpageComponent} from './landingpage/landingpage.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { NavbarComponent } from './landingpage/navbar/navbar.component';
+import {MatToolbarModule} from '@angular/material/toolbar';
+import {MatIconModule} from '@angular/material/icon';
+import {MatButtonModule} from '@angular/material/button';
+import { HeaderComponent } from './landingpage/header/header.component';
 
 
 @NgModule({
@@ -14,11 +18,15 @@ import { NavbarComponent } from './landingpage/navbar/navbar.component';
     AppComponent,
     LandingpageComponent,
     NavbarComponent,
+    HeaderComponent,
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
+    MatToolbarModule,
+    MatIconModule,
+    MatButtonModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
