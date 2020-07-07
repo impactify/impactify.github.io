@@ -1,0 +1,31 @@
+.header {
+  width: 100vw;
+  height: 100vh;
+  background-color: rgb(93, 47, 232);
+}
+
+.header-container {
+  display: flex;
+  padding: 20vh 5vh 20vh 5vh;
+}
+
+.header-img {
+  width: 60%;
+  vertical-align: bottom;
+}
+
+.header-img img {
+  display: block;
+  width: 100%;
+}
+
+.header-text {
+  vertical-align: bottom;
+  color: white;
+  width: 40%
+}
+
+h1 {
+  font-size: 4rem;
+  padding-top: 1rem;
+}

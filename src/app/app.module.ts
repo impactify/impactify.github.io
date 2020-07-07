@@ -10,7 +10,8 @@ import { NavbarComponent } from './landingpage/navbar/navbar.component';
 import {MatToolbarModule} from '@angular/material/toolbar';
 import {MatIconModule} from '@angular/material/icon';
 import {MatButtonModule} from '@angular/material/button';
-import { HeaderComponent } from './landingpage/header/header.component';
+import { MainComponent } from './landingpage/main/main.component';
+import { FooterComponent } from './landingpage/footer/footer.component';
 
 
 @NgModule({
@@ -18,7 +19,8 @@ import { HeaderComponent } from './landingpage/header/header.component';
     AppComponent,
     LandingpageComponent,
     NavbarComponent,
-    HeaderComponent,
+    MainComponent,
+    FooterComponent,
   ],
   imports: [
     BrowserModule,
