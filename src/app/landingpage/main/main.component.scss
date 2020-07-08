@@ -1,12 +1,13 @@
 .header {
   width: 100vw;
-  height: 100vh;
-  background-color: rgb(93, 47, 232);
+  height: calc(100vh - 90px);
+  background-color: #5A22F2;
 }
 
 .header-container {
   display: flex;
-  padding: 20vh 5vh 20vh 5vh;
+  align-items: flex-end;
+  padding: 20vh 10vh 20vh 10vh;
 }
 
 .header-img {
@@ -20,12 +21,32 @@
 }
 
 .header-text {
-  vertical-align: bottom;
-  color: white;
-  width: 40%
+  width: 40%;
+  text-align: left;
+  font: 400 100px/120px 'Roboto', sans-serif;
+  font-size: 100px;
+  letter-spacing: 0px;
+  color: #FFFFFF;
+  text-transform: uppercase;
+  opacity: 1;
 }
 
-h1 {
-  font-size: 4rem;
-  padding-top: 1rem;
+.intro {
+  padding: 10vh 25vh 10vh 25vh;
+}
+
+.intro h2 {
+  text-align: center;
+  font: 400 24px/32px Varela Round;
+  letter-spacing: 0px;
+  color: #5A22F2;
+  opacity: 1;
+}
+
+.intro p {
+  text-align: left;
+  font: 100 18px/26px Roboto;
+  letter-spacing: 0px;
+  color: #2F2F2F;
+  opacity: 1;
 }

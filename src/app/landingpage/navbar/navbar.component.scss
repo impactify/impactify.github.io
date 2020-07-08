@@ -3,7 +3,7 @@
 }
 
 .nav-logo img {
-  height: 80px;
+  height: 70px;
   vertical-align: middle;
 }
 
@@ -12,6 +12,15 @@
 }
 
 mat-toolbar {
-  height: 100px;
+  height: 90px;
   background-color: white;
+}
+
+button {
+  text-align: center;
+  font: 400 20px/41px Varela Round;
+  letter-spacing: 0px;
+  color: #3E3E3E;
+  text-transform: capitalize;
+  opacity: 1;
 }

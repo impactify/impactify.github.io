@@ -1,0 +1,12 @@
+//Import Theming-Functions
+@import '~@angular/material/theming';
+@import 'custom-palette';
+//Define color palettes
+$primary-palette: mat-palette($mat-primary);
+$accent-palette: mat-palette($mat-accent);
+$warn-palette: mat-palette($mat-red);
+// Generate Theme-Object
+$theme: mat-light-theme($primary-palette, $accent-palette, $warn-palette);
+$custom-typography: mat-typography-config(
+  $font-family: 'Roboto, Varela',
+);
