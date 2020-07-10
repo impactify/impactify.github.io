@@ -1,3 +1,11 @@
+p {
+  text-align: left;
+  font: 100 18px/26px Roboto;
+  letter-spacing: 0px;
+  color: #2F2F2F;
+  opacity: 1;
+}
+
 .header {
   width: 100vw;
   height: calc(100vh - 90px);
@@ -31,11 +39,15 @@
   opacity: 1;
 }
 
-.intro {
+.intro, .orga, .sponsor, .team {
   padding: 10vh 25vh 10vh 25vh;
 }
 
-.intro h2 {
+.intro-headline, .orga-headline, .sponsor-headline {
+  margin-bottom: 3rem;
+}
+
+.intro-headline {
   text-align: center;
   font: 400 24px/32px Varela Round;
   letter-spacing: 0px;
@@ -43,10 +55,31 @@
   opacity: 1;
 }
 
-.intro p {
-  text-align: left;
-  font: 100 18px/26px Roboto;
+.orga, .team {
+  background: #F8F7F7 0% 0% no-repeat padding-box;
+}
+
+.orga-headline {
+  text-align: center;
+  font: 400 24px/32px Varela Round;
   letter-spacing: 0px;
-  color: #2F2F2F;
+  color: #C020D9;
   opacity: 1;
 }
+
+.sponsor-headline {
+  text-align: center;
+  font: 400 24px/32px Varela Round;
+  letter-spacing: 0px;
+  color: #5A22F2;
+  opacity: 1;
+}
+
+.team-container img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+}
+
+
+

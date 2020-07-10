@@ -24,6 +24,7 @@
     "@angular/router": "^10.0.1",
     "@material/icon-button": "^7.0.0",
     "@material/top-app-bar": "^7.0.0",
+    "aos": "^2.3.4",
     "core-js": "^3.6.5",
     "material-design-icons": "^3.0.1",
     "material-icons": "^0.3.1",
