@@ -6,9 +6,16 @@
     "ng": "ng",
     "start": "ng serve",
     "build": "ng build --prod",
+    "scully": "scully",
+    "scully:serve": "scully serve",
     "test": "ng test",
+    "test:cov": "jest --coverage",
     "lint": "ng lint",
-    "e2e": "ng e2e"
+    "eslint:fix": "eslint \"{src,apps,libs,test}/**/*.ts\" --fix",
+    "prettier:fix": "prettier --write \"src/**/*.ts\"",
+    "e2e": "ng e2e",
+    "pre-commit": "npm run prettier:fix",
+    "commit": "git add . && npm run pre-commit && npx git-cz"
   },
   "private": true,
   "dependencies": {
@@ -24,6 +31,9 @@
     "@angular/router": "^10.0.1",
     "@material/icon-button": "^7.0.0",
     "@material/top-app-bar": "^7.0.0",
+    "@scullyio/init": "0.0.29",
+    "@scullyio/ng-lib": "latest",
+    "@scullyio/scully": "latest",
     "aos": "^2.3.4",
     "core-js": "^3.6.5",
     "material-design-icons": "^3.0.1",
@@ -40,10 +50,13 @@
     "@types/jasmine": "~3.5.11",
     "@types/jasminewd2": "~2.0.8",
     "@types/node": "^12.11.1",
+    "@typescript-eslint/eslint-plugin": "^3.6.0",
     "codelyzer": "^5.1.2",
     "css-loader": "^3.6.0",
+    "eslint": "^7.4.0",
     "extract-loader": "^5.1.0",
     "file-loader": "^6.0.0",
+    "git-cz": "^4.7.0",
     "jasmine-core": "~3.5.0",
     "jasmine-spec-reporter": "~5.0.0",
     "karma": "~5.0.0",
@@ -51,6 +64,7 @@
     "karma-coverage-istanbul-reporter": "~3.0.2",
     "karma-jasmine": "~3.3.0",
     "karma-jasmine-html-reporter": "^1.5.0",
+    "prettier": "^2.0.5",
     "protractor": "~7.0.0",
     "sass": "^1.26.9",
     "sass-loader": "^9.0.1",
@@ -60,5 +74,10 @@
     "webpack": "^4.43.0",
     "webpack-cli": "^3.3.12",
     "webpack-dev-server": "^3.11.0"
+  },
+  "config": {
+    "commitizen": {
+      "path": "./node_modules/cz-conventional-changelog"
+    }
   }
 }
