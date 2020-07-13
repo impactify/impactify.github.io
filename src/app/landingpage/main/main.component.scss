@@ -6,8 +6,22 @@ p {
   opacity: 1;
 }
 
+.scroll-up-button {
+  right: 5vw;
+  bottom: 5vh;
+  height: 50px;
+  width: 50px;
+  position: fixed;
+  border-radius: 50%;
+  background-color: #5A22F2;
+}
+
+.scroll-up-button .material-icons {
+
+}
+
 .header {
-  width: 100vw;
+  width: 100%;
   height: calc(100vh - 90px);
   background-color: #5A22F2;
 }
@@ -40,7 +54,7 @@ p {
 }
 
 .intro, .orga, .sponsor, .team, .contact {
-  padding: 10vh 25vh 10vh 25vh;
+  padding: 20vh 25vh 15vh 20vh;
 }
 
 .intro-headline, .orga-headline, .sponsor-headline, .contact-headline {
@@ -49,7 +63,7 @@ p {
 
 .intro-headline {
   text-align: center;
-  font: 400 24px/32px Varela Round;
+  font: 400 30px/36px Varela Round;
   letter-spacing: 0px;
   color: #5A22F2;
   opacity: 1;
@@ -61,7 +75,7 @@ p {
 
 .orga-headline {
   text-align: center;
-  font: 400 24px/32px Varela Round;
+  font: 400 30px/36px Varela Round;
   letter-spacing: 0px;
   color: #C020D9;
   opacity: 1;
@@ -69,7 +83,7 @@ p {
 
 .sponsor-headline {
   text-align: center;
-  font: 400 24px/32px Varela Round;
+  font: 400 30px/36px Varela Round;
   letter-spacing: 0px;
   color: #5A22F2;
   opacity: 1;
@@ -83,7 +97,7 @@ p {
 
 .team-headline {
   text-align: center;
-  font: 400 24px/32px Varela Round;
+  font: 400 30px/36px Varela Round;
   letter-spacing: 0px;
   color: #1B78F2;
   opacity: 1;
@@ -91,7 +105,7 @@ p {
 
 .contact-headline {
   text-align: center;
-  font: 400 24px/32px Varela Round;
+  font: 400 30px/36px Varela Round;
   letter-spacing: 0px;
   color: #5A22F2;
   opacity: 1;
