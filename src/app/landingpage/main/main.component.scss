@@ -1,6 +1,6 @@
 p {
   text-align: left;
-  font: 100 18px/26px Roboto;
+  font: 100 18px Roboto;
   letter-spacing: 0px;
   color: #2F2F2F;
   opacity: 1;
@@ -27,13 +27,10 @@ p {
 }
 
 .header-container {
-  display: flex;
-  align-items: flex-end;
-  padding: 20vh 10vh 20vh 10vh;
+  padding: 20vh 5vh 20vh 5vh;
 }
 
 .header-img {
-  width: 60%;
   vertical-align: bottom;
 }
 
@@ -43,10 +40,8 @@ p {
 }
 
 .header-text {
-  width: 40%;
   text-align: left;
-  font: 400 100px/120px 'Roboto', sans-serif;
-  font-size: 100px;
+  font: 400 12vh 'Roboto', sans-serif;
   letter-spacing: 0px;
   color: #FFFFFF;
   text-transform: uppercase;
@@ -63,7 +58,7 @@ p {
 
 .intro-headline {
   text-align: center;
-  font: 400 30px/36px Varela Round;
+  font: 400 30px Varela Round;
   letter-spacing: 0px;
   color: #5A22F2;
   opacity: 1;
@@ -75,7 +70,7 @@ p {
 
 .orga-headline {
   text-align: center;
-  font: 400 30px/36px Varela Round;
+  font: 400 30px Varela Round;
   letter-spacing: 0px;
   color: #C020D9;
   opacity: 1;
@@ -83,7 +78,7 @@ p {
 
 .sponsor-headline {
   text-align: center;
-  font: 400 30px/36px Varela Round;
+  font: 400 30px Varela Round;
   letter-spacing: 0px;
   color: #5A22F2;
   opacity: 1;
@@ -97,7 +92,7 @@ p {
 
 .team-headline {
   text-align: center;
-  font: 400 30px/36px Varela Round;
+  font: 400 30px Varela Round;
   letter-spacing: 0px;
   color: #1B78F2;
   opacity: 1;
@@ -105,7 +100,7 @@ p {
 
 .contact-headline {
   text-align: center;
-  font: 400 30px/36px Varela Round;
+  font: 400 30px Varela Round;
   letter-spacing: 0px;
   color: #5A22F2;
   opacity: 1;
