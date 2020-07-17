@@ -7,8 +7,6 @@ import * as AOS from 'aos';
   styleUrls: ['./landingpage.component.scss']
 })
 export class LandingpageComponent implements OnInit {
-  constructor() {}
-
   ngOnInit() {
     AOS.init();
   }
