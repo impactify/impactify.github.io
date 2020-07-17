@@ -22,6 +22,7 @@
 /***************************************************************************************************
  * Zone JS is required by default for Angular itself.
  */
+import 'zone.js/dist/zone';
 /***************************************************************************************************
  * APPLICATION IMPORTS
  */
@@ -29,4 +30,3 @@
  * SCULLY IMPORTS
  */
 import 'zone.js/dist/task-tracking';
-import 'zone.js/dist/zone';
