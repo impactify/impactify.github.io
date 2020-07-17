@@ -1,7 +1,10 @@
 {
   "name": "impact-projektseite",
-  "version": "0.0.0",
-  "license": "MIT",
+  "version": "0.0.1",
+  "description": "Projectsite where we describe the vision and the goals of the impAct project to be visible and to get in contact with organizations and sponsors.",
+  "author": "impAct e.V.",
+  "private": false,
+  "license": "GPL-3.0-only",
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
@@ -18,7 +21,6 @@
     "pre-commit": "npm run prettier:fix && npm run eslint:fix",
     "commit": "git add . && npm run pre-commit && npx git-cz"
   },
-  "private": true,
   "dependencies": {
     "@angular/animations": "^10.0.1",
     "@angular/cdk": "^10.0.1",
