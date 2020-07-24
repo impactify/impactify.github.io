@@ -37,6 +37,21 @@ p {
 .header-img img {
   display: block;
   width: 100%;
+  margin-top: -80px;
+}
+
+.orga-button {
+  background: #BE21D6 0% 0% no-repeat padding-box;
+  border-radius: 70px;
+  opacity: 1;
+  color: white;
+}
+
+.helfer-button {
+  background: #BE21D6 0% 0% no-repeat padding-box;
+  border-radius: 70px;
+  opacity: 1;
+  color: white;
 }
 
 .header-text {
@@ -48,11 +63,11 @@ p {
   opacity: 1;
 }
 
-.intro, .orga, .sponsor, .team, .contact {
+.intro, .team, .contact {
   padding: 20vh 25vh 15vh 20vh;
 }
 
-.intro-headline, .orga-headline, .sponsor-headline, .contact-headline {
+.intro-headline, .contact-headline {
   margin-bottom: 3rem;
 }
 
@@ -64,30 +79,21 @@ p {
   opacity: 1;
 }
 
-.orga, .team {
-  background: #F8F7F7 0% 0% no-repeat padding-box;
+.intro img {
+  display: block;
+  width: 100%;
 }
 
-.orga-headline {
+.teammember p {
   text-align: center;
-  font: 400 30px Varela Round;
-  letter-spacing: 0px;
-  color: #C020D9;
-  opacity: 1;
 }
 
-.sponsor-headline {
-  text-align: center;
-  font: 400 30px Varela Round;
-  letter-spacing: 0px;
-  color: #5A22F2;
-  opacity: 1;
-}
-
-.team-container img {
+.teammember-img {
   width: 100px;
   height: 100px;
   border-radius: 50%;
+  background-size: cover;
+  border-style: solid;
 }
 
 .team-headline {
@@ -96,6 +102,15 @@ p {
   letter-spacing: 0px;
   color: #1B78F2;
   opacity: 1;
+}
+
+.team p {
+  -webkit-column-count: 2; /* Chrome, Safari, Opera */
+  -moz-column-count: 2; /* Firefox */
+  column-count: 2;
+  -webkit-column-gap: 20px; /* Chrome, Safari, Opera */
+  -moz-column-gap: 20px; /* Firefox */
+  column-gap: 40px;
 }
 
 .contact-headline {
