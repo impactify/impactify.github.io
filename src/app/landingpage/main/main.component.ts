@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { Teammember} from './teammember';
+import { Teammember } from './teammember';
 
 @Component({
   selector: 'app-main',
