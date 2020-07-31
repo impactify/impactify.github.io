@@ -12,10 +12,11 @@ import { FooterComponent } from './landingpage/footer/footer.component';
 import { LandingpageComponent } from './landingpage/landingpage.component';
 import { MainComponent } from './landingpage/main/main.component';
 import { NavbarComponent } from './landingpage/navbar/navbar.component';
+import { MatMenuModule } from "@angular/material/menu";
 
 @NgModule({
   declarations: [AppComponent, LandingpageComponent, NavbarComponent, MainComponent, FooterComponent],
-  imports: [BrowserModule, AppRoutingModule, BrowserAnimationsModule, MatToolbarModule, MatIconModule, MatButtonModule, MatGridListModule, ScullyLibModule],
+  imports: [BrowserModule, AppRoutingModule, BrowserAnimationsModule, MatToolbarModule, MatIconModule, MatButtonModule, MatGridListModule, ScullyLibModule, MatMenuModule],
   providers: [],
   bootstrap: [AppComponent]
 })

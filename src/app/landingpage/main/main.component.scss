@@ -1,3 +1,5 @@
+@import "~bootstrap";
+
 p {
   text-align: left;
   font: 100 18px Roboto;
@@ -23,11 +25,11 @@ p {
 .header {
   width: 100%;
   height: calc(100vh - 90px);
-  background-color: #5A22F2;
+  background-color: #5a22f2;
 }
 
 .header-container {
-  padding: 20vh 5vh 20vh 5vh;
+  padding: 15vh 0 15vh 0;
 }
 
 .header-img {
@@ -40,23 +42,34 @@ p {
   margin-top: -80px;
 }
 
+@include media-breakpoint-down(md) {
+  .header-img img {
+    margin-top: 0;
+  }
+}
+
 .orga-button {
-  background: #BE21D6 0% 0% no-repeat padding-box;
+  background: #1b78f2 0% 0% no-repeat padding-box;
   border-radius: 70px;
   opacity: 1;
-  color: white;
+  font-family: Varela Round, serif;
+  font-size: 18px;
+  text-align: center;
+  color: #f4f4f4;
 }
 
 .helfer-button {
-  background: #BE21D6 0% 0% no-repeat padding-box;
   border-radius: 70px;
   opacity: 1;
-  color: white;
+  background: #b230dc 0% 0% no-repeat padding-box;
+  font-family: Varela Round, serif;
+  font-size: 18px;
+  color: #f4f4f4;
 }
 
 .header-text {
   text-align: left;
-  font: 400 12vh 'Roboto', sans-serif;
+  font: 400 8vw Roboto, sans-serif;
   letter-spacing: 0px;
   color: #FFFFFF;
   text-transform: uppercase;

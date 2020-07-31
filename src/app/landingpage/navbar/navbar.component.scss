@@ -13,14 +13,13 @@
 
 mat-toolbar {
   height: 90px;
-  background-color: white;
+  background-color: #f8f7f7;
+  box-shadow: 0 5px 6px 0 rgba(0, 0, 0, 0.16);
 }
 
-button {
-  text-align: center;
-  font: 400 20px/41px Varela Round;
-  letter-spacing: 0px;
-  color: #3E3E3E;
-  text-transform: capitalize;
-  opacity: 1;
+.menu {
+  color: #b230dc;
+  font-size: 40px;
+  width: 40px;
+  display: inline;
 }
