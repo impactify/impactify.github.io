@@ -6,9 +6,9 @@
     <span class="spacer"></span>
     <button mat-button [matMenuTriggerFor]="menu"><mat-icon class="menu">menu</mat-icon></button>
     <mat-menu #menu="matMenu">
-      <button mat-menu-item>Organisationen</button>
+      <a mat-menu-item routerLink="/organizations" routerLinkActive="active">Organisationen</a>
       <button mat-menu-item>Mitmachen</button>
-      <button mat-menu-item>Sponsoren</button>
+      <a mat-menu-item routerLink="/sponsoring" routerLinkActive="active">Sponsoren</a>
       <button mat-menu-item>Kontakt</button>
     </mat-menu>
   </mat-toolbar>
