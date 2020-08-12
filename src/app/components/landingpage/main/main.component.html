@@ -5,14 +5,14 @@
     </div>
     <div class="row justify-content-around align-items-end">
       <div class="col-lg-5">
-        <div class="row">
-          <div class="col-4">
-            <a mat-raised-button class="orga-button" routerLink="/organizations" routerLinkActive="active">Organisation</a>
+        <div class="header-button row justify-content-lg-center">
+          <div class="col-lg-auto col-md-auto col-12">
+            <a mat-raised-button class="orga-button" routerLink="/organizations" routerLinkActive="active">Organisationen</a>
           </div>
-          <div class="col-4">
+          <div class="col-lg-auto col-md-auto col-6">
             <a mat-raised-button class="helfer-button" routerLink="/organizations" routerLinkActive="active">Mitmachen</a>
           </div>
-          <div class="col-4">
+          <div class="col-lg-auto col-md-auto col-6">
             <a mat-raised-button class="helfer-button" routerLink="/sponsoring" routerLinkActive="active">Spenden</a>
           </div>
         </div>
@@ -27,7 +27,7 @@
 <!-- <button mat-flat-button class="scroll-up-button"><span class="material-icons">keyboard_arrow_up</span></button> -->
 
 <section class="intro">
-  <div class="intro-container container">
+  <div data-aos="fade-up" class="intro-container container">
     <div class="intro-headline">Wie funktioniert impact?</div>
     <div class="row">
       <div class="col-md-4">
@@ -70,10 +70,10 @@
 </section>
 
 <section class="team">
-  <div class="team-container container">
+  <div data-aos="fade-up" class="team-container container">
     <div class="team-headline">Wer sind wir?</div>
     <div class="teammebers row justify-content-center align-items-center align-content-center">
-      <div *ngFor="let teammember of teammembers" class="col-md-2 teammember">
+      <div *ngFor="let teammember of teammembers" class="col-lg-2 col-md-3 col-sm-4 col-6 teammember">
         <div class="teammember-img mx-auto" style="background-image: url({{ teammember.img }}); border-color: {{ teammember.color }} "></div>
         <div class="teammember-description">
           <p style="color: {{teammember.color}}; font-weight: bold">{{ teammember.name }}</p>
@@ -81,9 +81,9 @@
         </div>
       </div>
     </div>
-  </div>
-  <div class="team-description">
-    <p>Wir sind ein wachsendes Team von 20 Studierenden aus Konstanz in den Teams Kommunikation, Design, Strategie und IT. Gemeinsam treffen wir uns, leider noch digital, regelmäßig und bringen die Fortschritte der jeweiligen Teams zusammen. Das überaus große Engagement, die fachspezifischen Kenntnisse und Erfahrungen der Teammitglieder, sowie die zielführenden Aktivitäten, lassen uns zuversichtlich auf ein zeitnahes Release von impact blicken.</p>
+    <div class="team-description">
+      <p>Wir sind ein wachsendes Team von 20 Studierenden aus Konstanz in den Teams Kommunikation, Design, Strategie und IT. Gemeinsam treffen wir uns, leider noch digital, regelmäßig und bringen die Fortschritte der jeweiligen Teams zusammen. Das überaus große Engagement, die fachspezifischen Kenntnisse und Erfahrungen der Teammitglieder, sowie die zielführenden Aktivitäten, lassen uns zuversichtlich auf ein zeitnahes Release von impact blicken.</p>
+    </div>
   </div>
 </section>
 

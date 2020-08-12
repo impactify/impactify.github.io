@@ -1,3 +1,5 @@
+@import "../../../../node_modules/bootstrap";
+
 footer {
   background-color: #5a13f2;
   padding: 40px;
@@ -30,4 +32,14 @@ a, p {
   letter-spacing: normal;
   text-align: left;
   color: #ffffff;
+}
+
+.modal-footer {
+  padding-top: 30px;
+}
+
+@include media-breakpoint-down(md) {
+  .footer-logo {
+    margin: 0 0 40px 0;
+  }
 }

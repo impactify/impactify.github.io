@@ -17,8 +17,6 @@ b {
   font-weight: bold;
 }
 
-
-
 .scroll-up-button {
   right: 5vw;
   bottom: 5vh;
@@ -37,6 +35,13 @@ b {
   width: 100%;
   height: calc(100vh - 90px);
   background-color: #5a22f2;
+  overflow: scroll;
+}
+
+@include media-breakpoint-down(sm) {
+  .header {
+    min-height: max-content;
+  }
 }
 
 .header-container {
@@ -53,9 +58,32 @@ b {
   margin-top: -80px;
 }
 
+.header-button div {
+  padding: 0 !important;
+}
+
+.header-button a {
+  margin: 10px 10px 10px 10px;
+}
+
 @include media-breakpoint-down(md) {
   .header-img img {
     margin-top: 0;
+  }
+  .header-text, .header-button, .header-img {
+    margin: 10px 0 10px 0;
+  }
+  .header-text {
+    font-size: 80px !important;
+  }
+}
+
+@include media-breakpoint-down(sm) {
+  .header-text {
+    font-size: 50px !important;
+  }
+  .header-container {
+    padding: 10vh 5vw 10vh 5vw
   }
 }
 
@@ -103,6 +131,7 @@ b {
 
 .intro-headline, .contact-headline {
   margin-bottom: 3rem;
+  line-height: 1;
 }
 
 .intro-headline {
@@ -173,3 +202,12 @@ b {
   -moz-column-gap: 20px; /* Firefox */
   column-gap: 40px;
 }
+
+@include media-breakpoint-down(md) {
+  .team-description p {
+    -webkit-column-count: 1; /* Chrome, Safari, Opera */
+    -moz-column-count: 1; /* Firefox */
+    column-count: 1;
+  }
+}
+
