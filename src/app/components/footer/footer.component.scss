@@ -39,7 +39,17 @@ a, p {
 }
 
 @include media-breakpoint-down(md) {
+  footer h1 {
+    font-size: 18px;
+  }
+  p {
+    font-size: 15px;
+  }
   .footer-logo {
     margin: 0 0 40px 0;
+  }
+  .footer-logo img {
+    display: block;
+    height: 40px;
   }
 }

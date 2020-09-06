@@ -1,0 +1,129 @@
+p {
+  text-align: left;
+  font: 100 15px Roboto;
+  letter-spacing: 0px;
+  color: #2F2F2F;
+  opacity: 1;
+}
+
+b {
+  text-align: left;
+  font: 100 15px Roboto;
+  letter-spacing: 0px;
+  color: #2F2F2F;
+  opacity: 1;
+  font-weight: bold;
+}
+
+.header {
+  width: 100%;
+  height: 100vh;
+  background-color: #5a22f2;
+}
+
+.header-container {
+  padding: 15vh 5vw 15vh 5vw;
+}
+
+.header-img {
+  vertical-align: bottom;
+}
+
+.header-img img {
+  width: 100%;
+  height: auto;
+}
+
+.button {
+  opacity: 1;
+  font-family: Varela Round, serif;
+  font-size: 18px;
+  text-align: center;
+  border-radius: 100px !important;
+  padding: 10px 30px 10px 30px !important;
+}
+
+.header-button {
+  background-color: #ffffff !important;
+  color: #c010d9 !important;
+  margin-top: 50px;
+}
+
+.header-button-tooltip {
+  background: #FFFFFF;
+  color: #c010d9 !important;
+  font-family: Varela Round, serif;
+  font-size: 16px;
+}
+
+.header-text {
+  padding: 0 30px 30px 30px;
+  text-align: left;
+  font: 400 15vw Roboto, sans-serif;
+  letter-spacing: 0px;
+  color: #FFFFFF;
+  opacity: 1;
+  line-height: 1.2;
+}
+
+.intro, .team {
+  padding: 10vh 0 5vh 0;
+  background-color: #f7f7f7;
+}
+
+
+.intro-container, .team-container, .mitmachen-container {
+  width: 100%;
+  padding: 0vh 10vw 0vh 10vw;
+}
+
+.intro-container img {
+  width: 50%;
+  margin: 0 auto 20px auto;
+}
+
+.section-headline {
+  height: 60px;
+  text-align: center;
+  font-family: 'Varela Round', sans-serif;
+  font-size: 20px;
+  letter-spacing: 0px;
+  color: #5a22f2;
+  opacity: 1;
+  line-height: 1;
+}
+
+.teammember-description {
+  margin: 5px;
+}
+
+.teammember-description p {
+  text-align: center;
+  margin: 0px;
+}
+
+.teammember-slide {
+  margin: 30px 0 50px 0;
+}
+
+.teammember-img {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  background-size: cover;
+  border-style: solid;
+}
+
+.team-description p, .mitmachen-container p {
+  text-align: left;
+}
+
+.mitmachen-button {
+  background-color: #c010d9;
+  color: #ffffff !important;
+}
+
+.mitmachen-button:hover {
+  background-color: #FFFFFF !important;
+  color: #c010d9 !important;
+}
