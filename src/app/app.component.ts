@@ -1,21 +1,12 @@
 import { Component } from '@angular/core';
-import { ApplicationStateService } from './application-state.service';
 import { AppComponentModel } from './app.component.model';
-import {
-  trigger,
-  state,
-  style,
-  animate,
-  transition,
-  // ...
-} from '@angular/animations';
-
+import { ApplicationStateService } from './application-state.service';
 
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.scss'],
-  animations: [  ],
+  animations: []
 })
 export class AppComponent {
   title = 'app';

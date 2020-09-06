@@ -1,5 +1,4 @@
 export class AppComponentModel {
-
   public isToShowUserProfile: boolean;
 
   constructor() {
