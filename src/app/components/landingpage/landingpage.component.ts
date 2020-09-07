@@ -26,7 +26,7 @@ export class LandingpageComponent implements OnInit {
   }
 
   private loadLandingpage(): void {
-    // fills the product parameters inside the model
+    // fills the landingpage parameters inside the model
   }
 
   private updateView(): void {

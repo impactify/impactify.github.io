@@ -6,4 +6,3 @@ import { Component } from '@angular/core';
   styleUrls: ['./navbar.component.mobile.scss']
 })
 export class NavbarMobileComponent {}
-

@@ -1,0 +1,31 @@
+<section class="sponsoring">
+  <div class="sponsoring-container container">
+    <div class="section-headline">{{myViewModel.sponsorheadline}}</div>
+    <div class="row justify-content-center">
+      <div class="col-md-4">
+        <div class="px-2">
+          <img class="intro-img" alt="illu-vernetzen" src="../../../../assets/Illus/illu-vernetzen-blau.png">
+          <b>{{myViewModel.untersuetzung[0]}}</b>
+          <p>{{myViewModel.untersuetzung[1]}}</p>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="px-2">
+          <img class="intro-img" alt="illu-matchen" src="../../../../assets/Illus/illu-matchen-knall-zeichenfla-che-1.png">
+          <b>{{myViewModel.profitieren[0]}}</b>
+          <p>{{myViewModel.profitieren[1]}}</p>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="px-2">
+          <img class="intro-img" alt="illu-belohnen" src="../../../../assets/Illus/illu-anerkennen-gru-n.png">
+          <b>{{myViewModel.spende[0]}}</b>
+          <p>{{myViewModel.spende[1]}}</p>
+        </div>
+      </div>
+      <div class="col-">
+        <a mat-raised-button class="sponsoring-button button" routerLinkActive="active">{{myViewModel.sponsorbutton}}</a>
+      </div>
+    </div>
+  </div>
+</section>

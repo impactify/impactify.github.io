@@ -1,0 +1,34 @@
+<section class="organisations">
+  <div class="organisations-container">
+    <div class="section-headline">{{myViewModel.organisationheadline}}</div>
+    <mdb-carousel class="carousel slide carousel-fade" [animation]="'slide'" [interval]="'0'">
+      <mdb-carousel-item>
+        <div class="view w-100">
+          <img class="d-block" alt="illu-vernetzen" src="../../../../assets/Illus/illu-vernetzen-blau.png">
+          <b>{{myViewModel.ehrenamt[0]}}</b>
+          <p>{{myViewModel.ehrenamt[1]}}</p>
+        </div>
+      </mdb-carousel-item>
+      <mdb-carousel-item>
+        <div class="view w-100 intro-slide">
+          <img class="d-block" alt="illu-matchen" src="../../../../assets/Illus/illu-matchen-knall-zeichenfla-che-1.png">
+          <b>{{myViewModel.knoten[0]}}</b>
+          <p>{{myViewModel.knoten[1]}}</p>
+        </div>
+      </mdb-carousel-item>
+      <mdb-carousel-item>
+        <div class="view w-100 intro-slide">
+          <img class="d-block" alt="illu-belohnen" src="../../../../assets/Illus/illu-anerkennen-gru-n.png">
+          <b>{{myViewModel.ergaenzen[0]}}</b>
+          <p>{{myViewModel.ergaenzen[1]}}</p>
+        </div>
+      </mdb-carousel-item>
+    </mdb-carousel>
+  </div>
+  <div class="row justify-content-center">
+    <div class="col-">
+      <a mat-raised-button class="button organisations-button"
+         routerLinkActive="active">{{myViewModel.organisationbutton}}</a>
+    </div>
+  </div>
+</section>

@@ -1,0 +1,31 @@
+<section class="organisations">
+  <div class="organisations-container container">
+    <div class="section-headline">{{myViewModel.organisationheadline}}</div>
+    <div class="row justify-content-center">
+      <div class="col-md-4">
+        <div class="px-2">
+          <img class="intro-img" alt="illu-vernetzen" src="../../../../assets/Illus/illu-vernetzen-blau.png">
+          <b>{{myViewModel.ehrenamt[0]}}</b>
+          <p>{{myViewModel.ehrenamt[1]}}</p>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="px-2">
+          <img class="intro-img" alt="illu-matchen" src="../../../../assets/Illus/illu-matchen-knall-zeichenfla-che-1.png">
+          <b>{{myViewModel.knoten[0]}}</b>
+          <p>{{myViewModel.knoten[1]}}</p>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="px-2">
+          <img class="intro-img" alt="illu-belohnen" src="../../../../assets/Illus/illu-anerkennen-gru-n.png">
+          <b>{{myViewModel.ergaenzen[0]}}</b>
+          <p>{{myViewModel.ergaenzen[1]}}</p>
+        </div>
+      </div>
+      <div class="col-">
+        <a mat-raised-button class="organisations-button button" routerLinkActive="active">{{myViewModel.organisationbutton}}</a>
+      </div>
+    </div>
+  </div>
+</section>
