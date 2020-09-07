@@ -1,8 +1,9 @@
 import { Component } from '@angular/core';
 
 @Component({
-  selector: 'app-navbar',
+  selector: 'app-navbar-mobile',
   templateUrl: './navbar.component.mobile.html',
   styleUrls: ['./navbar.component.mobile.scss']
 })
-export class NavbarComponentMobile {}
+export class NavbarMobileComponent {}
+

@@ -1,15 +1,22 @@
 <div class="wrapper">
-  <mat-toolbar>
-    <div class="nav-logo">
-      <img src="../../../assets/logo/Schriftlogo_impact_final.png"/>
-    </div>
-    <span class="spacer"></span>
-    <button mat-button [matMenuTriggerFor]="menu"><mat-icon class="menu">menu</mat-icon></button>
-    <mat-menu #menu="matMenu">
-      <a mat-menu-item routerLink="/organizations" routerLinkActive="active">Organisationen</a>
-      <button mat-menu-item>Mitmachen</button>
-      <a mat-menu-item routerLink="/sponsoring" routerLinkActive="active">Sponsoren</a>
-      <button mat-menu-item>Kontakt</button>
-    </mat-menu>
-  </mat-toolbar>
+  <mdb-navbar #navbar SideClass="navbar navbar-expand-lg navbar-light">
+    <mdb-navbar-brand><a class="navbar-brand" href="#"><img class="nav-logo" src="../../../assets/logo/Schriftlogo_impact_final.png"/></a></mdb-navbar-brand>
+    <links>
+      <ul class="navbar-nav mr-auto navbar-items">
+        <li class="nav-item">
+          <a class="nav-link waves-dark" mdbWavesEffect>Mitmachen</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link waves-dark" routerLink="/organizations" mdbWavesEffect>Organisationen</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link waves-dark" routerLink="/sponsoring" mdbWavesEffect>Sponsoren</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link waves-dark" mdbWavesEffect>Kontakt</a>
+        </li>
+      </ul>
+    </links>
+  </mdb-navbar>
 </div>
+
