@@ -9,7 +9,7 @@ import { SponsoringComponent } from './components/sponsoring/sponsoring.componen
 const routes: Routes = [
   { path: '', component: LandingpageComponent },
   { path: 'sponsoring', component: SponsoringComponent },
-  { path: 'organizations', component: OrganisationsComponent },
+  { path: 'organisationen', component: OrganisationsComponent },
   { path: 'datenschutz', component: DatenschutzComponent },
   { path: 'impressum', component: ImpressumComponent }
 ];

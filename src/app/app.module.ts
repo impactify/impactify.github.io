@@ -21,11 +21,14 @@ import { SponsoringComponent } from './components/sponsoring/sponsoring.componen
 import { SponsoringDesktopComponent } from './components/sponsoring/sponsoring.component.desktop';
 import { SponsoringMobileComponent } from './components/sponsoring/sponsoring.component.mobile';
 import { MaterialModule } from './material.module';
+import { NavbarComponent } from './components/navbar/navbar.component';
+import { NgxPageScrollCoreModule } from 'ngx-page-scroll-core';
 
 @NgModule({
   declarations: [
     AppComponent,
     LandingpageComponent,
+    NavbarComponent,
     NavbarDesktopComponent,
     NavbarMobileComponent,
     FooterComponent,
@@ -38,7 +41,7 @@ import { MaterialModule } from './material.module';
     OrganisationsDesktopComponent,
     OrganisationsMobileComponent,
     SponsoringDesktopComponent,
-    SponsoringMobileComponent
+    SponsoringMobileComponent,
   ],
   imports: [
     BrowserModule,
@@ -51,7 +54,8 @@ import { MaterialModule } from './material.module';
     WavesModule,
     HammerModule,
     IvyCarouselModule,
-    NavbarModule
+    NavbarModule,
+    NgxPageScrollCoreModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

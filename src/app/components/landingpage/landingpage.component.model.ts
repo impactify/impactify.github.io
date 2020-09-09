@@ -52,20 +52,20 @@ export class LandingpageComponentModel {
       new TeamMember('Fabian', '../../../assets/images/portraits/Fabian.jpg', '#5a13f2', 'Koordination & Produkt'),
       new TeamMember('Julia', '../../../assets/images/portraits/Julia.jpg', '#c004d9', 'Kommunikation'),
       new TeamMember('Michael', '../../../assets/images/portraits/Michael.jpg', '#c004d9', 'Kommunikation & Strategie'),
-      new TeamMember('Patrick', '../../../assets/images/portraits/noimage.jpg', '#5a13f2', 'Kommunikation & Social Media'),
+      new TeamMember('Patrick', '../../../assets/images/portraits/noimage.svg', '#5a13f2', 'Kommunikation & Social Media'),
       new TeamMember('Emine', '../../../assets/images/portraits/Emine.jpg', '#c004d9', 'Design'),
       new TeamMember('Ena', '../../../assets/images/portraits/Ena.jpg', '#5a13f2', 'Design'),
-      new TeamMember('Florian', '../../../assets/images/portraits/noimage.jpg', '#5a13f2', 'Recht'),
-      new TeamMember('Marino', '../../../assets/images/portraits/noimage.jpg', '#1b78f2', 'Strategie & Produkt'),
+      new TeamMember('Florian', '../../../assets/images/portraits/noimage.svg', '#5a13f2', 'Recht'),
+      new TeamMember('Marino', '../../../assets/images/portraits/noimage.svg', '#1b78f2', 'Strategie & Produkt'),
       new TeamMember('Lena', '../../../assets/images/portraits/Lena.jpg', '#c004d9', 'Strategie & Produkt'),
       new TeamMember('Lara', '../../../assets/images/portraits/Lara.jpg', '#1b78f2', 'Social Media'),
       new TeamMember('Paula', '../../../assets/images/portraits/Paula.jpg', '#1b78f2', 'Design'),
       new TeamMember('Nikolai', '../../../assets/images/portraits/Nico.jpg', '#5a13f2', 'Entwicklung'),
-      new TeamMember('Lena', '../../../assets/images/portraits/noimage.jpg', '#c004d9', 'Entwicklung'),
-      new TeamMember('Tilman', '../../../assets/images/portraits/noimage.jpg', '#c004d9', 'Entwicklung'),
-      new TeamMember('Fabian', '../../../assets/images/portraits/noimage.jpg', '#c004d9', 'Strategie'),
-      new TeamMember('Kevin', '../../../assets/images/portraits/noimage.jpg', '#1b78f2', 'Entwicklung'),
-      new TeamMember('Bastian', '../../../assets/images/portraits/noimage.jpg', '#c004d9', 'Strategie')
+      new TeamMember('Lena', '../../../assets/images/portraits/noimage.svg', '#c004d9', 'Entwicklung'),
+      new TeamMember('Tilman', '../../../assets/images/portraits/noimage.svg', '#c004d9', 'Entwicklung'),
+      new TeamMember('Fabian', '../../../assets/images/portraits/noimage.svg', '#c004d9', 'Strategie'),
+      new TeamMember('Kevin', '../../../assets/images/portraits/noimage.svg', '#1b78f2', 'Entwicklung'),
+      new TeamMember('Bastian', '../../../assets/images/portraits/noimage.svg', '#c004d9', 'Entwicklung')
     ];
     this.mitmachenheadline = 'Du möchtest mitmachen?';
     this.mitmachendescription =

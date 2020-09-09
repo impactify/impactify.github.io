@@ -1,9 +1,12 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Inject, OnInit } from "@angular/core";
 import { DomSanitizer } from '@angular/platform-browser';
 import { Router } from '@angular/router';
 import * as AOS from 'aos';
 import { ApplicationStateService } from '../../application-state.service';
 import { LandingpageComponentModel } from './landingpage.component.model';
+import { MatSnackBar } from '@angular/material/snack-bar';
+import { DOCUMENT } from '@angular/common';
+import { PageScrollInstance, PageScrollService } from "ngx-page-scroll-core";
 
 @Component({
   selector: 'app-landingpage',
@@ -16,13 +19,19 @@ export class LandingpageComponent implements OnInit {
 
   public isMobileResolution: boolean;
 
-  constructor(private router: Router, private sanitizer: DomSanitizer, private applicationStateService: ApplicationStateService) {
+  constructor(private router: Router, private sanitizer: DomSanitizer, private applicationStateService: ApplicationStateService, private snackBar: MatSnackBar) {
     this.model = new LandingpageComponentModel(sanitizer);
     this.myViewModel = new LandingpageComponentModel(sanitizer);
 
     this.loadLandingpage();
     this.updateView();
     this.isMobileResolution = applicationStateService.getIsMobileResolution();
+  }
+
+  openSnackBar(message: string, action: string) {
+    this.snackBar.open(message, action, {
+      duration: 2000,
+    });
   }
 
   private loadLandingpage(): void {

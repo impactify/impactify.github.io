@@ -12,35 +12,35 @@
           </div>
         </div>
       </div>
-      <div class="header-img col-7 ">
-        <img alt="" src="../../../../assets/Illus/Header_alternativ.png">
+      <div class="header-img col-7">
+        <img alt="Illu_Header" src="./assets/Illus/Header_alternativ.png">
       </div>
     </div>
-      <span class="material-icons">keyboard_arrow_down</span>
+      <a pageScroll href="#intro" class="material-icons">keyboard_arrow_down</a>
   </div>
 </header>
 
-<section class="intro">
+<section id="intro" class="intro">
   <div data-aos="fade-up" class="intro-container container">
     <div class="section-headline">{{myViewModel.functionheadline}}</div>
     <div class="row">
       <div class="col-md-4">
         <div class="px-2">
-          <img class="intro-img" alt="illu-vernetzen" src="../../../../assets/Illus/illu-vernetzen-blau.png">
+          <img class="intro-img" alt="illu-vernetzen" src="./assets/Illus/Illu_Vernetzen.png">
           <b>{{myViewModel.functionvernetzen[0]}}</b>
           <p>{{myViewModel.functionvernetzen[1]}}</p>
         </div>
       </div>
       <div class="col-md-4">
         <div class="px-2">
-          <img class="intro-img" alt="illu-matchen" src="../../../../assets/Illus/illu-matchen-knall-zeichenfla-che-1.png">
+          <img class="intro-img" alt="illu-matchen" src="./assets/Illus/Illu_Matchen.png">
           <b>{{myViewModel.functionmatch[0]}}</b>
           <p>{{myViewModel.functionmatch[1]}}</p>
         </div>
       </div>
       <div class="col-md-4">
         <div class="px-2">
-          <img class="intro-img" alt="illu-belohnen" src="../../../../assets/Illus/illu-anerkennen-gru-n.png">
+          <img class="intro-img" alt="illu-belohnen" src="./assets/Illus/Illu_Anerkennen.png">
           <b>{{myViewModel.functionbelohnen[0]}}</b>
           <p>{{myViewModel.functionbelohnen[1]}}</p>
         </div>
@@ -67,17 +67,17 @@
       </div>
     </div>
   </div>
-  <div class="container mitmachen-container">
+  <div id="mitmachen" class="container mitmachen-container">
     <div class="section-headline">{{myViewModel.mitmachenheadline}}</div>
-    <div class="row">
-      <div class="col-3">
-        <img alt="" src="../../../../assets/Illus/illu-vernetzen-blau.png">
+    <div class="row align-items-end">
+      <div class="col-lg-3 col-5">
+        <img alt="Illu_Mitmachen" src="./assets/Illus/Illu_Mitmachen.png">
       </div>
-      <div class="col-6">
+      <div class="col-lg-6 col-7">
         <p>{{myViewModel.mitmachendescription}}</p>
         <div class="row justify-content-center">
           <div class="col-6">
-            <a mat-raised-button class="button mitmachen-button"
+            <a href="mailto:mitgliedwerden@yourimpact.eu?subject=Ich%20m%C3%B6chte%20gerne%20Mitglied%20werden" mat-raised-button class="button mitmachen-button"
             routerLinkActive="active">{{myViewModel.mitmachenbutton}}</a>
           </div>
         </div>

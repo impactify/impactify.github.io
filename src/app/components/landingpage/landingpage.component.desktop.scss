@@ -1,24 +1,8 @@
+@use 'src/styles.desktop';
 @import "../../../../node_modules/bootstrap";
 
 .desktop-container, .mobile-container {
   background-color: #f8f7f7;
-}
-
-p {
-  text-align: left;
-  font: 100 18px Roboto;
-  letter-spacing: 0px;
-  color: #2F2F2F;
-  opacity: 1;
-}
-
-b {
-  text-align: left;
-  font: 100 18px Roboto;
-  letter-spacing: 0px;
-  color: #2F2F2F;
-  opacity: 1;
-  font-weight: bold;
 }
 
 .header {
@@ -28,7 +12,7 @@ b {
 }
 
 .header-container {
-  padding: 15vh 0 15vh 0;
+  padding: 18vh 0 15vh 0;
 }
 
 .header-img {
@@ -50,13 +34,8 @@ b {
   color: #FFFFFF;
 }
 
-.button {
-  opacity: 1;
-  font-family: Varela Round, serif;
-  font-size: 18px;
-  text-align: center;
-  border-radius: 100px !important;
-  padding: 10px 30px 10px 30px !important;
+.header .material-icons:hover {
+  color: #c010d9 !important;
 }
 
 .header-button {
@@ -99,22 +78,10 @@ b {
   background-attachment: scroll;
 }
 
-.section-headline {
-  height: 60px;
-  text-align: center;
-  font-family: 'Varela Round', sans-serif;
-  font-size: 40px;
-  letter-spacing: 0px;
-  color: #5a22f2;
-  opacity: 1;
-  margin-bottom: 3rem;
-  line-height: 1;
-}
-
-.intro img {
+.intro-img {
+  height: 15rem;
   display: block;
-  width: 80%;
-  margin: 0 10% 20% 10%;
+  margin: 0 auto 20% 0;
 }
 
 .team {
@@ -159,11 +126,17 @@ b {
 .mitmachen-button {
   background-color: #c010d9;
   color: #ffffff !important;
+  margin-top: 30px !important;
 }
 
 .mitmachen-button:hover {
   background-color: #FFFFFF !important;
   color: #c010d9 !important;
+}
+
+.mitmachen-container img {
+  display: block;
+  height: 250px
 }
 
 /*

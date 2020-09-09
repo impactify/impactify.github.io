@@ -3,6 +3,8 @@ import { DomSanitizer } from '@angular/platform-browser';
 import { Router } from '@angular/router';
 import { ApplicationStateService } from '../../application-state.service';
 import { LandingpageComponent } from './landingpage.component';
+import { MatSnackBar } from '@angular/material/snack-bar';
+import { PageScrollService } from 'ngx-page-scroll-core';
 
 @Component({
   selector: 'app-landingpage-mobile',
@@ -10,7 +12,7 @@ import { LandingpageComponent } from './landingpage.component';
   styleUrls: ['./landingpage.component.mobile.scss']
 })
 export class LandingpageMobileComponent extends LandingpageComponent {
-  constructor(router: Router, sanitizer: DomSanitizer, applicationStateService: ApplicationStateService) {
-    super(router, sanitizer, applicationStateService);
+  constructor(router: Router, sanitizer: DomSanitizer, applicationStateService: ApplicationStateService, snackBar: MatSnackBar) {
+    super(router, sanitizer, applicationStateService, snackBar);
   }
 }

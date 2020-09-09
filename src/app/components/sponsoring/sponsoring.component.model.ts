@@ -29,7 +29,7 @@ export class SponsoringComponentModel {
         'finanziert werden müssen. Sie können uns dabei unterstützen, unsere Idee zu ' +
         'verwirklichen und umzusetzen. Gerne lassen wir Ihnen eine Aufstellung ' +
         'zukommen, damit Sie nachvollziehen können wofür Ihre Spende verwendet ' +
-        'wurde. Überweisen Sie direkt per PayPal oder unser nutzen Sie unser Formular.'
+        'wurde.'
     ];
     this.sponsorbutton = 'Kontaktiere uns';
   }
