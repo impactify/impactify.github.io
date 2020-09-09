@@ -4,6 +4,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { ScullyLibModule } from '@scullyio/ng-lib';
 import { CarouselModule, NavbarModule, WavesModule } from 'angular-bootstrap-md';
 import { IvyCarouselModule } from 'angular-responsive-carousel';
+import { NgxPageScrollCoreModule } from 'ngx-page-scroll-core';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { DatenschutzComponent } from './components/datenschutz/datenschutz.component';
@@ -12,6 +13,7 @@ import { ImpressumComponent } from './components/impressum/impressum.component';
 import { LandingpageComponent } from './components/landingpage/landingpage.component';
 import { LandingpageDesktopComponent } from './components/landingpage/landingpage.component.desktop';
 import { LandingpageMobileComponent } from './components/landingpage/landingpage.component.mobile';
+import { NavbarComponent } from './components/navbar/navbar.component';
 import { NavbarDesktopComponent } from './components/navbar/navbar.component.desktop';
 import { NavbarMobileComponent } from './components/navbar/navbar.component.mobile';
 import { OrganisationsComponent } from './components/organisations/organisations.component';
@@ -21,8 +23,6 @@ import { SponsoringComponent } from './components/sponsoring/sponsoring.componen
 import { SponsoringDesktopComponent } from './components/sponsoring/sponsoring.component.desktop';
 import { SponsoringMobileComponent } from './components/sponsoring/sponsoring.component.mobile';
 import { MaterialModule } from './material.module';
-import { NavbarComponent } from './components/navbar/navbar.component';
-import { NgxPageScrollCoreModule } from 'ngx-page-scroll-core';
 
 @NgModule({
   declarations: [
@@ -41,7 +41,7 @@ import { NgxPageScrollCoreModule } from 'ngx-page-scroll-core';
     OrganisationsDesktopComponent,
     OrganisationsMobileComponent,
     SponsoringDesktopComponent,
-    SponsoringMobileComponent,
+    SponsoringMobileComponent
   ],
   imports: [
     BrowserModule,
@@ -55,7 +55,7 @@ import { NgxPageScrollCoreModule } from 'ngx-page-scroll-core';
     HammerModule,
     IvyCarouselModule,
     NavbarModule,
-    NgxPageScrollCoreModule,
+    NgxPageScrollCoreModule
   ],
   providers: [],
   bootstrap: [AppComponent]

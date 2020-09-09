@@ -7,6 +7,6 @@ import { Component } from '@angular/core';
 })
 export class NavbarMobileComponent {
   scroll(el: HTMLElement) {
-    el.scrollIntoView({behavior: 'smooth'});
+    el.scrollIntoView({ behavior: 'smooth' });
   }
 }

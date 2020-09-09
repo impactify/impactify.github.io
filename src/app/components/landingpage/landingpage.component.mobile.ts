@@ -1,10 +1,9 @@
 import { Component } from '@angular/core';
+import { MatSnackBar } from '@angular/material/snack-bar';
 import { DomSanitizer } from '@angular/platform-browser';
 import { Router } from '@angular/router';
 import { ApplicationStateService } from '../../application-state.service';
 import { LandingpageComponent } from './landingpage.component';
-import { MatSnackBar } from '@angular/material/snack-bar';
-import { PageScrollService } from 'ngx-page-scroll-core';
 
 @Component({
   selector: 'app-landingpage-mobile',

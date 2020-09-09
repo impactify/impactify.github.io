@@ -1,12 +1,10 @@
-import { Component, Inject, OnInit } from "@angular/core";
+import { Component, OnInit } from '@angular/core';
+import { MatSnackBar } from '@angular/material/snack-bar';
 import { DomSanitizer } from '@angular/platform-browser';
 import { Router } from '@angular/router';
 import * as AOS from 'aos';
 import { ApplicationStateService } from '../../application-state.service';
 import { LandingpageComponentModel } from './landingpage.component.model';
-import { MatSnackBar } from '@angular/material/snack-bar';
-import { DOCUMENT } from '@angular/common';
-import { PageScrollInstance, PageScrollService } from "ngx-page-scroll-core";
 
 @Component({
   selector: 'app-landingpage',
@@ -30,7 +28,7 @@ export class LandingpageComponent implements OnInit {
 
   openSnackBar(message: string, action: string) {
     this.snackBar.open(message, action, {
-      duration: 2000,
+      duration: 2000
     });
   }
 

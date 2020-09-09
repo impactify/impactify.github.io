@@ -5,8 +5,7 @@ import { Component } from '@angular/core';
   templateUrl: './navbar.component.desktop.html',
   styleUrls: ['./navbar.component.desktop.scss']
 })
-export class NavbarDesktopComponent {
-}
+export class NavbarDesktopComponent {}
 let prevScrollpos = window.pageYOffset;
 window.onscroll = function () {
   const currentScrollPos = window.pageYOffset;
