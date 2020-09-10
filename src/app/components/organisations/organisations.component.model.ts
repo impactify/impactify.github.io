@@ -12,23 +12,23 @@ export class OrganisationComponentModel {
     this.ehrenamt = [
       'Wir bringen das Ehrenamt weiter',
       'Durch Umfragen haben wir festgestellt, dass sich immer weniger junge Menschen im Ehrenamt engagieren. ' +
-        'Wir wollen den Trend neu setzen und mit unserer App insbesondere den jüngeren Teil der Gesellschaft ansprechen, um ihn mit euch zu zusammenzubringen. ' +
-        'So könnt ihr mit mehr Mitstreiter*innen und Nachwuchs rechnen.  '
+        'Wir wollen den Trend neu setzen und mit unserer App insbesondere den jüngeren Teil der Gesellschaft ansprechen, um ihn mit Euch zu zusammenzubringen. ' +
+        'So könnt Ihr mit mehr Mitstreiter*innen und Nachwuchs rechnen.  '
     ];
     this.knoten = [
       'Wir sind der Knotenpunkt',
       'Als zentrale, bundesweite Anlaufstelle rund um das Ehrenamt wird sich die ' +
-        'Sichtbarkeit und Reichweite eurer Organisation und Arbeit deutlich ' +
-        'erhöhen. Gleichzeitig erreicht ihr eure Zielgruppe mit kleinerem Aufwand, da ihr weniger verschiedene Kanäle bedienen müsst.'
+        'Sichtbarkeit und Reichweite Eurer Organisation und Arbeit deutlich ' +
+        'erhöhen. Gleichzeitig erreicht Ihr Eure Zielgruppe mit kleinerem Aufwand, da Ihr weniger verschiedene Kanäle bedienen müsst.'
     ];
     this.ergaenzen = [
       'Wir ergänzen uns',
       'Durch die fachspezifischen Kenntnisse und Erfahrungen der ' +
-        'Teammitglieder*innen sind wir der vielseitigen Aufgabe, diese Plattform ' +
+        'Teammitglieder sind wir der vielseitigen Aufgabe, diese Plattform ' +
         'zu konzipieren und zu entwickeln, gewachsen. Was uns fehlt ist das „Ehrenamts-Know-How“. Wir benötigen ' +
-        'eure Erfahrungen, um euch bestmöglich bei euren Vorhaben zu unterstützen.  '
+        'Eure Erfahrungen, um Euch bestmöglich bei Euren Vorhaben zu unterstützen.  '
     ];
-    this.organisationbutton = 'Kontaktiere uns';
+    this.organisationbutton = 'Kontaktiert uns';
   }
   public clone(): OrganisationComponentModel {
     const clonedModel: OrganisationComponentModel = new OrganisationComponentModel(this.sanitizer);

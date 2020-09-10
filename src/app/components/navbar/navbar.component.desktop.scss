@@ -8,7 +8,7 @@ nav {
   background-color: #ffffff;
   color: #222;
   border-radius: 100px;
-  width: 45em;
+  width: 48rem;
   margin: 2em auto 0 auto;
   transition: top 0.3s;
   box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.16);
@@ -24,6 +24,7 @@ nav ul li {
   list-style-type: none;
   height: 100%;
   float: left;
+  font-size: 18px;
 }
 
 li.seperator {
@@ -37,7 +38,7 @@ li.seperator:after {
   position: absolute;
   left: 0;
   top: 25%;
-  background-color: #4b4b4b;
+  background-color: #a5a5a5;
 }
 
 nav ul li a {
@@ -45,9 +46,13 @@ nav ul li a {
   color: #000000;
 }
 
+nav ul li a:hover {
+  color: #c010d9;
+}
+
 nav ul li
 {
-  padding: 1em 1.2em;;
+  padding: 0.8em 1.2em;
 }
 
 .logoLink {

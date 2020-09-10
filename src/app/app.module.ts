@@ -1,5 +1,5 @@
 import { NgModule } from '@angular/core';
-import { BrowserModule, HammerModule } from '@angular/platform-browser';
+import { BrowserModule, HAMMER_GESTURE_CONFIG, HammerGestureConfig, HammerModule } from '@angular/platform-browser';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { ScullyLibModule } from '@scullyio/ng-lib';
 import { CarouselModule, NavbarModule, WavesModule } from 'angular-bootstrap-md';
@@ -23,6 +23,13 @@ import { SponsoringComponent } from './components/sponsoring/sponsoring.componen
 import { SponsoringDesktopComponent } from './components/sponsoring/sponsoring.component.desktop';
 import { SponsoringMobileComponent } from './components/sponsoring/sponsoring.component.mobile';
 import { MaterialModule } from './material.module';
+
+export class MyHammerConfig extends HammerGestureConfig {
+  overrides = <any> {
+    'pinch': { enable: false },
+    'rotate': { enable: false }
+  };
+}
 
 @NgModule({
   declarations: [
@@ -57,7 +64,12 @@ import { MaterialModule } from './material.module';
     NavbarModule,
     NgxPageScrollCoreModule
   ],
-  providers: [],
+  providers: [
+    {
+      provide: HAMMER_GESTURE_CONFIG,
+      useClass: MyHammerConfig
+    }
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule {}

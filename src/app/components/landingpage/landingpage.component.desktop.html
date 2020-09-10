@@ -16,8 +16,8 @@
         <img alt="Illu_Header" src="./assets/Illus/Header_alternativ.png">
       </div>
     </div>
-      <a pageScroll href="#intro" class="material-icons">keyboard_arrow_down</a>
   </div>
+  <a pageScroll href="#intro" class="material-icons">keyboard_arrow_down</a>
 </header>
 
 <section id="intro" class="intro">
@@ -57,7 +57,7 @@
         <p>{{myViewModel.teamdescription}}</p>
       </div>
     </div>
-    <div class="teammebers row justify-content-center align-items-center align-content-center">
+    <div class="teammebers row justify-content-center">
       <div *ngFor="let teammember of myViewModel.teamMembers" class="col-lg-2 col-md-3 col-sm-4 teammember">
         <div class="teammember-img mx-auto" style="background-image: url({{ teammember.img }}); border-color: {{ teammember.color }} "></div>
         <div class="teammember-description">
@@ -69,7 +69,7 @@
   </div>
   <div id="mitmachen" class="container mitmachen-container">
     <div class="section-headline">{{myViewModel.mitmachenheadline}}</div>
-    <div class="row align-items-end">
+    <div class="row align-items-start">
       <div class="col-lg-3 col-5">
         <img alt="Illu_Mitmachen" src="./assets/Illus/Illu_Mitmachen.png">
       </div>

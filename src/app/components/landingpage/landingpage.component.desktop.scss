@@ -13,6 +13,12 @@
 
 .header-container {
   padding: 18vh 0 15vh 0;
+  /*
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  */
 }
 
 .header-img {
@@ -64,6 +70,12 @@
   line-height: 1.2;
 }
 
+@include media-breakpoint-up(xl) {
+  .header-text {
+    font: 400 140px Roboto, sans-serif;
+  }
+}
+
 .intro, .team {
   padding: 10vh 5vw 10vh 5vw;
   background-color: #f8f7f7;
@@ -81,7 +93,7 @@
 .intro-img {
   height: 15rem;
   display: block;
-  margin: 0 auto 20% 0;
+  margin: 0 auto 20% auto;
 }
 
 .team {
@@ -121,6 +133,10 @@
 
 .team-description p, .mitmachen-container p {
   text-align: center;
+}
+
+.mitmachen-container {
+  padding-top: 20vh;
 }
 
 .mitmachen-button {

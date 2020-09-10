@@ -13,7 +13,7 @@ export class SponsoringComponentModel {
       'Ihre Unterstützung zählt',
       'impact verfolgt ausschließlich gemeinnützige Ziele und wird von ' +
         'jungen Studierenden getragen. Der Verein verfügt über keine nennenswerten Einnahmen. Gleichzeitig ist der Betrieb der App, sowie die anfangs nötigen ' +
-        'Werbemaßnahmen mit erheblichen Kosten verbunden. Nur mit Ihrer Hilfe können wir den Nutzer*innen das optimale Nutzererlebnis bieten und sie bundesweit vernetzen.'
+        'Werbemaßnahmen mit erheblichen Kosten verbunden. Nur mit Ihrer Hilfe können wir den Nutzer*innen das optimale Erlebnis bieten und sie bundesweit vernetzen.'
     ];
     this.profitieren = [
       'Sie profitieren ebenfalls',
@@ -31,7 +31,7 @@ export class SponsoringComponentModel {
         'zukommen, damit Sie nachvollziehen können wofür Ihre Spende verwendet ' +
         'wurde.'
     ];
-    this.sponsorbutton = 'Kontaktiere uns';
+    this.sponsorbutton = 'Kontaktieren Sie uns';
   }
   public clone(): SponsoringComponentModel {
     const clonedModel: SponsoringComponentModel = new SponsoringComponentModel(this.sanitizer);
