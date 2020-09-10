@@ -9,10 +9,13 @@ export class NavbarDesktopComponent {}
 let prevScrollpos = window.pageYOffset;
 window.onscroll = function () {
   const currentScrollPos = window.pageYOffset;
-  if (prevScrollpos > currentScrollPos) {
-    document.getElementById('navbar').style.top = '0';
-  } else {
-    document.getElementById('navbar').style.top = '-100px';
+  const navbar = document.getElementById('navbar');
+  if (navbar !== null) {
+    if (prevScrollpos > currentScrollPos) {
+      navbar.style.top = '0';
+    } else {
+      navbar.style.top = '-100px';
+    }
+    prevScrollpos = currentScrollPos;
   }
-  prevScrollpos = currentScrollPos;
 };
