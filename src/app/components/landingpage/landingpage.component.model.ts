@@ -17,7 +17,7 @@ export class LandingpageComponentModel {
   public mitmachenbutton: string;
 
   constructor(private sanitizer: DomSanitizer) {
-    this.headline = 'What\'s your \n' + 'impact?';
+    this.headline = "What's your \n" + 'impact?';
     this.headerbutton = ['Zur Anwendung', 'Coming soon'];
     this.functionheadline = 'Wie funktioniert impact?';
     this.functionvernetzen = [

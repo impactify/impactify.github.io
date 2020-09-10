@@ -1,5 +1,5 @@
 import { NgModule } from '@angular/core';
-import { BrowserModule, HAMMER_GESTURE_CONFIG, HammerGestureConfig, HammerModule } from '@angular/platform-browser';
+import { BrowserModule, HammerGestureConfig, HammerModule, HAMMER_GESTURE_CONFIG } from '@angular/platform-browser';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { ScullyLibModule } from '@scullyio/ng-lib';
 import { CarouselModule, NavbarModule, WavesModule } from 'angular-bootstrap-md';
@@ -25,9 +25,9 @@ import { SponsoringMobileComponent } from './components/sponsoring/sponsoring.co
 import { MaterialModule } from './material.module';
 
 export class MyHammerConfig extends HammerGestureConfig {
-  overrides = <any> {
-    'pinch': { enable: false },
-    'rotate': { enable: false }
+  overrides = <any>{
+    pinch: { enable: false },
+    rotate: { enable: false }
   };
 }
 
