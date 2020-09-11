@@ -48,30 +48,30 @@ export class LandingpageComponentModel {
       'Kenntnisse und Erfahrungen der Teammitglieder, sowie die zielführenden Aktivitäten, lassen uns auf ein ' +
       'zeitnahes Release von impact blicken.';
     this.teamMembers = [
-      new TeamMember('Tobias', '../../../assets/images/portraits/Tobi.jpg', '#1b78f2', 'Gründer & Entwicklung'),
+      new TeamMember('Tobias', '../../../assets/images/portraits/Tobi.jpg', '#c004d9', 'Gründer & Entwicklung'),
       new TeamMember('Fabian', '../../../assets/images/portraits/Fabian.jpg', '#5a13f2', 'Koordination & Produkt'),
-      new TeamMember('Julia', '../../../assets/images/portraits/Julia.jpg', '#c004d9', 'Kommunikation'),
-      new TeamMember('Michael', '../../../assets/images/portraits/Michael.jpg', '#c004d9', 'Kommunikation & Strategie'),
-      new TeamMember('Patrick', '../../../assets/images/portraits/noimage.png', '#5a13f2', 'Kommunikation & Social Media'),
-      new TeamMember('Emine', '../../../assets/images/portraits/Emine.jpg', '#c004d9', 'Design'),
-      new TeamMember('Ena', '../../../assets/images/portraits/Ena.jpg', '#5a13f2', 'Design'),
+      new TeamMember('Julia', '../../../assets/images/portraits/Julia.jpg', '#1b78f2', 'Kommunikation'),
+      new TeamMember('Michael', '../../../assets/images/portraits/Michael.jpg', '#5a13f2', 'Kommunikation & Strategie'),
+      new TeamMember('Patrick', '../../../assets/images/portraits/Patrick.jpg', '#1b78f2', 'Kommunikation & Social Media'),
+      new TeamMember('Emine', '../../../assets/images/portraits/Emine.jpg', '#1b78f2', 'Design'),
+      new TeamMember('Ena', '../../../assets/images/portraits/Ena.jpg', '#1b78f2', 'Design'),
       new TeamMember('Florian', '../../../assets/images/portraits/noimage.png', '#5a13f2', 'Recht'),
-      new TeamMember('Marino', '../../../assets/images/portraits/noimage.png', '#1b78f2', 'Strategie & Produkt'),
-      new TeamMember('Lena', '../../../assets/images/portraits/Lena.jpg', '#c004d9', 'Strategie & Produkt'),
-      new TeamMember('Lara', '../../../assets/images/portraits/Lara.jpg', '#1b78f2', 'Social Media'),
+      new TeamMember('Marino', '../../../assets/images/portraits/noimage.png', '#5a13f2', 'Strategie & Produkt'),
+      new TeamMember('Lena', '../../../assets/images/portraits/Lena.jpg', '#5a13f2', 'Strategie & Produkt'),
+      new TeamMember('Lara', '../../../assets/images/portraits/Lara.jpg', '#c004d9', 'Social Media'),
       new TeamMember('Paula', '../../../assets/images/portraits/Paula.jpg', '#1b78f2', 'Design'),
-      new TeamMember('Nikolai', '../../../assets/images/portraits/Nico.jpg', '#5a13f2', 'Entwicklung'),
+      new TeamMember('Nikolai', '../../../assets/images/portraits/Nico.jpg', '#c004d9', 'Entwicklung'),
       new TeamMember('Lena', '../../../assets/images/portraits/noimage.png', '#c004d9', 'Entwicklung'),
       new TeamMember('Tilman', '../../../assets/images/portraits/noimage.png', '#c004d9', 'Entwicklung'),
-      new TeamMember('Fabian', '../../../assets/images/portraits/noimage.png', '#c004d9', 'Strategie'),
-      new TeamMember('Kevin', '../../../assets/images/portraits/noimage.png', '#1b78f2', 'Entwicklung'),
+      new TeamMember('Fabian', '../../../assets/images/portraits/noimage.png', '#5a13f2', 'Strategie'),
+      new TeamMember('Kevin', '../../../assets/images/portraits/noimage.png', '#c004d9', 'Entwicklung'),
       new TeamMember('Bastian', '../../../assets/images/portraits/noimage.png', '#c004d9', 'Entwicklung')
     ];
     this.mitmachenheadline = 'Du möchtest mitmachen?';
     this.mitmachendescription =
       'Du bist von unserem Vorhaben begeistert und möchtest Dich einbringen? Dann werde ' +
-      'Teil von impact! Wir freuen uns über jede Unterstützung für unser ambitioniertes Projekt. Ob als „freie*r ' +
-      'Mitarbeiter*in“ oder als Mitglied, Du kannst den Bereich und Umfang Deines Engagements selbst bestimmen.';
+      'Teil von impact! Wir freuen uns über jede Unterstützung für unser ambitioniertes Projekt. Ob als „freie ' +
+      'MitarbeiterIn“ oder als Mitglied, Du kannst den Bereich und Umfang Deines Engagements selbst bestimmen.';
     this.mitmachenbutton = 'Kontaktiere uns';
   }
 

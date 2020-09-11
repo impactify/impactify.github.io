@@ -12,8 +12,8 @@ export class OrganisationComponentModel {
     this.ehrenamt = [
       'Wir bringen das Ehrenamt weiter',
       'Durch Umfragen haben wir festgestellt, dass sich immer weniger junge Menschen im Ehrenamt engagieren. ' +
-        'Wir wollen den Trend neu setzen und mit unserer App insbesondere den jüngeren Teil der Gesellschaft ansprechen, um ihn mit Euch zu zusammenzubringen. ' +
-        'So könnt Ihr mit mehr Mitstreiter*innen und Nachwuchs rechnen.  '
+        'Wir wollen den Trend neu setzen und mit unserer App insbesondere den jüngeren Teil der Gesellschaft ansprechen, um ihn mit Euch zusammen zu bringen. ' +
+        'So könnt Ihr mit mehr MitstreiterInnen und Nachwuchs rechnen.  '
     ];
     this.knoten = [
       'Wir sind der Knotenpunkt',

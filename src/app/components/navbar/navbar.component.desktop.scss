@@ -8,7 +8,7 @@ nav {
   background-color: #ffffff;
   color: #222;
   border-radius: 100px;
-  width: 48rem;
+  width: 45rem;
   margin: 2em auto 0 auto;
   transition: top 0.3s;
   box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.16);
@@ -24,7 +24,8 @@ nav ul li {
   list-style-type: none;
   height: 100%;
   float: left;
-  font-size: 18px;
+  font-size: 16px;
+  font-family: Varela Round, serif;
 }
 
 li.seperator {
@@ -52,7 +53,7 @@ nav ul li a:hover {
 
 nav ul li
 {
-  padding: 0.8em 1.2em;
+  padding: 1em 1.2em;
 }
 
 .logoLink {

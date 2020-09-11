@@ -1,4 +1,4 @@
-import { NgModule } from '@angular/core';
+import { Injectable, NgModule } from '@angular/core';
 import { BrowserModule, HammerGestureConfig, HammerModule, HAMMER_GESTURE_CONFIG } from '@angular/platform-browser';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { ScullyLibModule } from '@scullyio/ng-lib';
@@ -24,6 +24,7 @@ import { SponsoringDesktopComponent } from './components/sponsoring/sponsoring.c
 import { SponsoringMobileComponent } from './components/sponsoring/sponsoring.component.mobile';
 import { MaterialModule } from './material.module';
 
+@Injectable()
 export class MyHammerConfig extends HammerGestureConfig {
   overrides = <any>{
     pinch: { enable: false },
