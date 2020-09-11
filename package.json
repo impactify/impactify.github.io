@@ -45,6 +45,7 @@
     "material-design-icons": "^3.0.1",
     "material-icons": "^0.3.1",
     "mdbootstrap": "^4.19.1",
+    "ngx-page-scroll": "^7.0.3",
     "ngx-page-scroll-core": "^7.0.3",
     "popper.js": "^1.16.1",
     "rxjs": "^6.5.5",

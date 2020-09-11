@@ -23,6 +23,7 @@ import { SponsoringComponent } from './components/sponsoring/sponsoring.componen
 import { SponsoringDesktopComponent } from './components/sponsoring/sponsoring.component.desktop';
 import { SponsoringMobileComponent } from './components/sponsoring/sponsoring.component.mobile';
 import { MaterialModule } from './material.module';
+import { NgxPageScrollModule } from 'ngx-page-scroll';
 
 @Injectable()
 export class MyHammerConfig extends HammerGestureConfig {
@@ -63,7 +64,8 @@ export class MyHammerConfig extends HammerGestureConfig {
     HammerModule,
     IvyCarouselModule,
     NavbarModule,
-    NgxPageScrollCoreModule
+    NgxPageScrollModule,
+    NgxPageScrollCoreModule,
   ],
   providers: [
     {
