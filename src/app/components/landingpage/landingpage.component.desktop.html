@@ -1,0 +1,92 @@
+<header class="header">
+  <div class="header-container container">
+    <div class="row">
+      <div class="header-text col-8">{{myViewModel.headline}}</div>
+    </div>
+    <div class="row justify-content-around align-items-end">
+      <div class="col-5">
+        <div class="row justify-content-center">
+          <div class="col-12">
+            <a mat-raised-button disabled class="header-button button" matTooltip="{{myViewModel.headerbutton[1]}}"
+               matTooltipClass="header-button-tooltip" routerLinkActive="active">{{myViewModel.headerbutton[0]}}</a>
+          </div>
+        </div>
+      </div>
+      <div class="header-img col-7">
+        <img alt="Illu_Header" src="./assets/Illus/Header_alternativ.png">
+      </div>
+    </div>
+  </div>
+  <a pageScroll href="#intro" class="material-icons">keyboard_arrow_down</a>
+</header>
+
+<section id="intro" class="intro">
+  <div data-aos="fade-up" class="intro-container container">
+    <div class="section-headline">{{myViewModel.functionheadline}}</div>
+    <div class="row">
+      <div class="col-md-4">
+        <div class="px-2">
+          <img class="intro-img" alt="illu-vernetzen" src="./assets/Illus/Illu_Vernetzen.png">
+          <b>{{myViewModel.functionvernetzen[0]}}</b>
+          <p>{{myViewModel.functionvernetzen[1]}}</p>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="px-2">
+          <img class="intro-img" alt="illu-matchen" src="./assets/Illus/Illu_Matchen.png">
+          <b>{{myViewModel.functionmatch[0]}}</b>
+          <p>{{myViewModel.functionmatch[1]}}</p>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="px-2">
+          <img class="intro-img" alt="illu-belohnen" src="./assets/Illus/Illu_Anerkennen.png">
+          <b>{{myViewModel.functionbelohnen[0]}}</b>
+          <p>{{myViewModel.functionbelohnen[1]}}</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="team">
+  <div data-aos="fade-up" class="team-container container">
+    <div class="section-headline">{{myViewModel.teamheadline}}</div>
+    <div class="row justify-content-center">
+      <div class="team-description col-6">
+        <p>{{myViewModel.teamdescription}}</p>
+      </div>
+    </div>
+    <div class="teammebers row justify-content-center">
+      <div *ngFor="let teammember of myViewModel.teamMembers" class="col-lg-2 col-md-3 col-sm-4 teammember">
+        <div class="teammember-img mx-auto" style="background-image: url({{ teammember.img }}); border-color: {{ teammember.color }} "></div>
+        <div class="teammember-description">
+          <p style="color: {{teammember.color}}; font-weight: bold">{{ teammember.name }}</p>
+          <p style="color: {{teammember.color}}">{{ teammember.task }}</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div id="mitmachen" class="container mitmachen-container">
+    <div class="section-headline">{{myViewModel.mitmachenheadline}}</div>
+    <div class="row align-items-start">
+      <div class="col-lg-3 col-5">
+        <img alt="Illu_Mitmachen" src="./assets/Illus/Illu_Mitmachen.png">
+      </div>
+      <div class="col-lg-6 col-7">
+        <p>{{myViewModel.mitmachendescription}}</p>
+        <div class="row justify-content-center">
+          <div class="col-6">
+            <a href="mailto:mitgliedwerden@yourimpact.eu?subject=Ich%20m%C3%B6chte%20gerne%20Mitglied%20werden" mat-raised-button class="button mitmachen-button"
+            routerLinkActive="active">{{myViewModel.mitmachenbutton}}</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="insta">
+  <div class="insta-container" data-aos="fade-up">
+  </div>
+</section>

@@ -30,3 +30,5 @@ import 'zone.js/dist/zone';
  * SCULLY IMPORTS
  */
 import 'zone.js/dist/task-tracking';
+
+import 'hammerjs';
