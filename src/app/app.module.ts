@@ -4,6 +4,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { ScullyLibModule } from '@scullyio/ng-lib';
 import { CarouselModule, NavbarModule, WavesModule } from 'angular-bootstrap-md';
 import { IvyCarouselModule } from 'angular-responsive-carousel';
+import { NgxPageScrollModule } from 'ngx-page-scroll';
 import { NgxPageScrollCoreModule } from 'ngx-page-scroll-core';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -23,7 +24,6 @@ import { SponsoringComponent } from './components/sponsoring/sponsoring.componen
 import { SponsoringDesktopComponent } from './components/sponsoring/sponsoring.component.desktop';
 import { SponsoringMobileComponent } from './components/sponsoring/sponsoring.component.mobile';
 import { MaterialModule } from './material.module';
-import { NgxPageScrollModule } from 'ngx-page-scroll';
 
 @Injectable()
 export class MyHammerConfig extends HammerGestureConfig {
@@ -65,7 +65,7 @@ export class MyHammerConfig extends HammerGestureConfig {
     IvyCarouselModule,
     NavbarModule,
     NgxPageScrollModule,
-    NgxPageScrollCoreModule,
+    NgxPageScrollCoreModule
   ],
   providers: [
     {
