@@ -10,26 +10,25 @@ export class SponsoringComponentModel {
   constructor(private sanitizer: DomSanitizer) {
     this.sponsorheadline = 'Sie möchten Sponsor werden?';
     this.untersuetzung = [
-      'Ihre Unterstützung zählt',
-      'impact verfolgt ausschließlich gemeinnützige Ziele und wird von ' +
-        'jungen Studierenden getragen. Der Verein verfügt über keine nennenswerten Einnahmen. Gleichzeitig ist der Betrieb der App, sowie die anfangs nötigen ' +
-        'Werbemaßnahmen mit erheblichen Kosten verbunden. Nur mit Ihrer Hilfe können wir den NutzerInnen das optimale Erlebnis bieten und sie bundesweit vernetzen.'
+      'Wofür benötigen wir Ihre Hilfe?',
+      'impact verfolgt ausschließlich gemeinnützige Ziele und wird von jungen Studierenden getragen. ' +
+        'Der Verein verfügt über keine nennenswerten Einkommensquellen. Gleichzeitig ist der Betrieb der App mit erheblichen ' +
+        'Kosten verbunden, ebenso die anfänglich nötigen Werbemaßnahmen. ' +
+        'Nur so können wir den Nutzern das versprochene, einzigartige Nutzungserlebnis und die erfolgsentscheidende, ' +
+        'bundesweite Vernetzung bieten.'
     ];
     this.profitieren = [
-      'Sie profitieren ebenfalls',
-      'Unterstützen Sie ein gemeinnütziges ' +
-        'Projekt und fördern somit soziales Engagement und dessen gesellschaftliche Anerkennung. Sie gehören damit zum Fundament von ' +
-        'impact, denn ohne Ihre Spende läuft bei uns nichts. ' +
-        'Tun Sie etwas Gutes, erhalten Sie von uns als Dankeschön einen prominenten Platz auf unserer Projektseite, sowie in ' +
-        'der App und gewinnen Sie an Sichtbarkeit, Reichweite und Ansehen. '
+      'Win-Win: Was können Sie von uns erwarten?',
+      'Sie können ein gemeinnütziges Projekt unterstützen, welches soziales Engagement und dessen gesellschaftliche Anerkennung ' +
+        'fördert und damit ein elementarer Bestandteil davon werden - ohne Ihre Spenden läuft bei uns buchstäblich nichts. ' +
+        'Neben dem erfüllenden Gefühl, etwas Gutes zu tun, erhalten Sie von uns als Dankeschön einen prominenten Platz auf ' +
+        'unserer Projektseite und in der App, wodurch Sie konkret an Sichtbarkeit, Reichweite und Reputation dazugewinnen. '
     ];
     this.spende = [
-      'Wir freuen uns über Ihre Spende',
-      'Vor allem in der IT- Infrastruktur und im Marketing fallen Projektkosten an, die ' +
-        'finanziert werden müssen. Sie können uns dabei unterstützen, unsere Idee zu ' +
-        'verwirklichen und umzusetzen. Gerne lassen wir Ihnen eine Aufstellung ' +
-        'zukommen, damit Sie nachvollziehen können wofür Ihre Spende verwendet ' +
-        'wurde.'
+      'Sie möchten uns unterstützen?',
+      'Wunderbar! Wegen unserer noch laufenden Vereinsgründung inklusive Anerkennung der Gemeinnützigkeit können wir Ihnen ' +
+        'derzeit leider noch keine automatisierte Spendenmöglichkeit anbieten. ' +
+        'Bitte nehmen Sie daher direkt Kontakt mit unserem Team auf.'
     ];
     this.sponsorbutton = 'Kontaktieren Sie uns';
   }

@@ -27,17 +27,15 @@ export class LandingpageComponentModel {
         'Ihr findet sowohl als Privatperson, als auch als Organisation, das "passende Gegenüber".'
     ];
     this.functionmatch = [
-      'Ihr findet Dein Match',
-      'Durch verschiedene Filtermöglichkeiten kannst Du ' +
-        'unter zahlreichen Suchangeboten verschiedenster Organisationen und Privatpersonen, die für Dich ' +
-        'passende Möglichkeit finden, Dich sozial zu engagieren. Dafür verwenden wir unseren Matching-Algorithmus.'
+      'Wir finden Euer Match',
+      'Basierend auf Eurem Profil schlagen wir Euch automatisch und spielerisch passende Möglichkeiten vor, Euch einzubringen. ' +
+        'Alternativ könnt Ihr Euch manuell mit diversen Filtermöglichkeiten selbst auf die Suche machen.'
     ];
     this.functionbelohnen = [
-      'Dein Einsatz wird belohnt',
+      'Euer Einsatz wird belohnt',
       'Soziales Engagement verdient Wertschätzung: Dafür haben wir gemeinsam mit unseren strategischen Partnern den ' +
-        '"Helferschein" ins Leben gerufen, der als Nachweis deiner guten Taten dient und dir perspektivisch bei vielen ' +
-        'Gelegenheiten positiv und vorteilhaft angerechnet werden wird. Unsere Vision ist es, den gesellschaftlichen Zusammenhalt ' +
-        'dauerhaft, auch über Krisenzeiten hinaus, zu fördern.'
+        '"Helferschein" ins Leben gerufen, der als Nachweis Eurer guten Taten dient und Euch perspektivisch bei vielen ' +
+        'Gelegenheiten positiv und vorteilhaft angerechnet werden wird.'
     ];
     this.teamheadline = 'Wer sind wir?';
     this.teamdescription =
@@ -46,7 +44,7 @@ export class LandingpageComponentModel {
       'Design und IT. Wir arbeiten teamübergreifend gemeinsam an den anstehenden Aufgaben und synchronisieren uns ' +
       'mindestens alle 2 Wochen in der großen Runde. ' +
       'Mit großem Engagement und Tatendrang sowie sich ergänzender, individueller Fähigkeiten und ' +
-      'Erfahrungen kommen wir der Umsetzung unseres Vision stetig näher.';
+      'Erfahrungen kommen wir der Umsetzung unserer Vision stetig näher.';
     this.teamMembers = [
       new TeamMember('Tobias', '../../../assets/images/portraits/Tobi.jpg', '#c004d9', 'Gründer, Entwicklung & Strategie'),
       new TeamMember('Fabian', '../../../assets/images/portraits/Fabian.jpg', '#5a13f2', 'Mitgründer, Koordination & Produkt'),
