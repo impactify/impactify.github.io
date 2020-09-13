@@ -14,8 +14,7 @@ branches:
     - cleaning
 
 stages:
-  - build
-  - deploy
+  - build & deploy
 
 notifications:
   email:
@@ -24,10 +23,11 @@ notifications:
 
 jobs:
   include:
-    - stage: build
-      script: echo 'Building scully' && npm run build && npm run scully
-    - stage: deploy
-      script: echo 'Release to GitHub Pages'
+    - stage: build & deploy
+      script:
+        - echo 'Building scully'
+        - npm run build && npm run scully
+        - echo 'Release to GitHub Pages'
       deploy:
         provider: pages
         skip_cleanup: true
