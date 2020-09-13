@@ -2,29 +2,38 @@ dist: trusty
 sudo: false
 language: node_js
 node_js:
-  - "12.14.1"
+  - '12.14.1'
 os:
   - linux
+cache:
+  directories:
+    - 'node_modules'
 
-install:
-  - npm
-cache: npm
+branches:
+  only:
+    - cleaning
 
 stages:
   - build
-  - name: deploy
-    if: branch = cleaning
+  - deploy
+
+notifications:
+  email:
+    on_success: never
+    on_failure: always
 
 jobs:
   include:
     - stage: build
-      script: echo "Building scully" && npm run build && npm run scully
+      script: echo 'Building scully' && npm run build && npm run scully
     - stage: deploy
-      script: echo "Release to GitHub Pages"
+      script: echo 'Release to GitHub Pages'
       deploy:
         provider: pages
         skip_cleanup: true
         github_token: $GITHUB_TOKEN
         keep_history: true
+        target_branch: gh-pages
+        local_dir: dist/scully
         on:
           branch: cleaning
