@@ -19,7 +19,7 @@
     "prettier:fix": "prettier --write \"src/**/*.ts\"",
     "e2e": "ng e2e",
     "pre-commit": "npm run prettier:fix && npm run eslint:fix",
-    "commit": "git add . && npm run pre-commit && npx git-cz"
+    "commit": "npm run pre-commit && git add . && npx git-cz"
   },
   "dependencies": {
     "@angular/animations": "^10.0.1",
