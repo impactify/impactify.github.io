@@ -34,7 +34,10 @@ npm-debug.log
 yarn-error.log
 testem.log
 /typings
+
+# scully
 .scully
+scully.log
 
 # e2e
 /e2e/*.js
