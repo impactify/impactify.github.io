@@ -1,0 +1,13 @@
+<div class="desktop-container" *ngIf="!isMobileResolution; else mobileContainer">
+  <app-navbar-desktop></app-navbar-desktop>
+  <app-organisations-desktop></app-organisations-desktop>
+  <app-footer></app-footer>
+</div>
+
+<ng-template #mobileContainer>
+  <app-navbar-mobile></app-navbar-mobile>
+  <app-organisations-mobile></app-organisations-mobile>
+  <app-footer></app-footer>
+</ng-template>
+
+

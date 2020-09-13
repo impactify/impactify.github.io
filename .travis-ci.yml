@@ -1,0 +1,30 @@
+dist: trusty
+sudo: false
+language: node_js
+node_js:
+  - "12.14.1"
+os:
+  - linux
+
+install:
+  - npm
+cache: npm
+
+stages:
+  - build
+  - name: deploy
+    if: branch = cleaning
+
+jobs:
+  include:
+    - stage: build
+      script: echo "Building scully" && npm run build && npm run scully
+    - stage: deploy
+      script: echo "Release to GitHub Pages"
+      deploy:
+        provider: pages
+        skip_cleanup: true
+        github_token: $GITHUB_TOKEN
+        keep_history: true
+        on:
+          branch: cleaning
