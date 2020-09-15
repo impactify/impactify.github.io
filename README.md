@@ -1,4 +1,6 @@
 # impAct - projectsite
+[![Build Status](https://travis-ci.com/impactify/impactify.github.io.svg?branch=master)](https://travis-ci.com/impactify/impactify.github.io)
+
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 10.0.0.
 
 ## License compliance
