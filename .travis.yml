@@ -11,7 +11,7 @@ cache:
 
 branches:
   only:
-    - cleaning
+    - master
 
 stages:
   - build & deploy
@@ -27,6 +27,7 @@ jobs:
       script:
         - echo 'Building scully'
         - npm run build && npm run scully
+        - cp CNAME dist/scully
         - echo 'Release to GitHub Pages'
       deploy:
         provider: pages
@@ -36,4 +37,4 @@ jobs:
         target_branch: gh-pages
         local_dir: dist/scully
         on:
-          branch: cleaning
+          branch: master

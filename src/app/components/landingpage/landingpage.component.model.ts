@@ -46,8 +46,8 @@ export class LandingpageComponentModel {
       'Mit großem Engagement und Tatendrang sowie sich ergänzender, individueller Fähigkeiten und ' +
       'Erfahrungen kommen wir der Umsetzung unserer Vision stetig näher.';
     this.teamMembers = [
-      new TeamMember('Tobias', '../../../assets/images/portraits/Tobi.jpg', '#c004d9', 'Gründer, Entwicklung & Strategie'),
-      new TeamMember('Fabian', '../../../assets/images/portraits/Fabian.jpg', '#5a13f2', 'Mitgründer, Koordination & Produkt'),
+      new TeamMember('Tobias', '../../../assets/images/portraits/Tobi.jpg', '#c004d9', 'Initiator, Entwicklung & Strategie'),
+      new TeamMember('Fabian', '../../../assets/images/portraits/Fabian.jpg', '#5a13f2', 'Co-Initiator, Koordination & Produkt'),
       new TeamMember('Julia', '../../../assets/images/portraits/Julia.jpg', '#1b78f2', 'Koordination & Kommunikation'),
       new TeamMember('Michael', '../../../assets/images/portraits/Michael.jpg', '#5a13f2', 'Kommunikation & Strategie'),
       new TeamMember('Patrick', '../../../assets/images/portraits/Patrick.jpg', '#1b78f2', 'Kommunikation & Social Media'),
