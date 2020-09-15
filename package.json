@@ -9,7 +9,7 @@
     "ng": "ng",
     "start": "ng serve",
     "build": "ng build --prod",
-    "scully": "scully",
+    "scully": "scully --noPrompt",
     "scully:gen": "npm run build && scully",
     "scully:serve": "scully serve",
     "scully:gen:serve": "npm run scully:gen && npm run scully:serve",
