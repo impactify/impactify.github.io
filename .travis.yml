@@ -1,0 +1,40 @@
+dist: trusty
+sudo: false
+language: node_js
+node_js:
+  - '12.14.1'
+os:
+  - linux
+cache:
+  directories:
+    - 'node_modules'
+
+branches:
+  only:
+    - master
+
+stages:
+  - build & deploy
+
+notifications:
+  email:
+    on_success: never
+    on_failure: always
+
+jobs:
+  include:
+    - stage: build & deploy
+      script:
+        - echo 'Building scully'
+        - npm run build && npm run scully
+        - cp CNAME dist/scully
+        - echo 'Release to GitHub Pages'
+      deploy:
+        provider: pages
+        skip_cleanup: true
+        github_token: $GITHUB_TOKEN
+        keep_history: true
+        target_branch: gh-pages
+        local_dir: dist/scully
+        on:
+          branch: master

@@ -21,36 +21,34 @@ export class LandingpageComponentModel {
     this.headerbutton = ['Zur Anwendung', 'Coming soon'];
     this.functionheadline = 'Wie funktioniert impact?';
     this.functionvernetzen = [
-      'Wir vernetzten Dich',
-      'impact will Dir die Möglichkeit geben, ' +
-        'Dich ohne Druck sozial zu engagieren. Dafür schaffen wir eine Plattform, die ' +
-        'Dich mit Hilfesuchenden verbindet und es Dir erleichtert mehr für Andere zu ' +
-        'tun. Du findest sowohl als Privatperson, als auch als Organisation jede Hilfe, die Du brauchst. '
+      'Wir vernetzten Euch',
+      'impact will die Hürden, sich gemeinnützig zu engagieren, minimieren: Ihr tut Gutes, wir erledigen den Rest. ' +
+        'Dafür schaffen wir eine Plattform, die alle relevanten Akteure zusammenführt, ohne Aufwand und Druck. ' +
+        'Ihr findet sowohl als Privatperson, als auch als Organisation, das "passende Gegenüber".'
     ];
     this.functionmatch = [
-      'Du findest Dein Match',
-      'Durch verschiedene Filtermöglichkeiten kannst Du ' +
-        'unter zahlreichen Suchangeboten verschiedenster Organisationen und Privatpersonen, die für Dich ' +
-        'passende Möglichkeit finden, Dich sozial zu engagieren. Dafür verwenden wir unseren Matching-Algorithmus.'
+      'Wir finden Euer Match',
+      'Basierend auf Eurem Profil schlagen wir Euch automatisch und spielerisch passende Möglichkeiten vor, Euch einzubringen. ' +
+        'Alternativ könnt Ihr Euch manuell mit diversen Filtermöglichkeiten selbst auf die Suche machen.'
     ];
     this.functionbelohnen = [
-      'Wir belohnen Dich',
-      'Für Deinen Einsatz belohnen wir Dich mit einem, von unseren ' +
-        'strategischen Partnern unterstützten und anerkannten, Zertifikat. Unsere Vision ist es den gesellschaftlichen ' +
-        'Zusammenhalt über Krisenzeiten hinaus zu fördern und eine bundesweit einheitliche Plattform mit allen relevanten ' +
-        'Akteuren zu schaffen. '
+      'Euer Einsatz wird belohnt',
+      'Soziales Engagement verdient Wertschätzung: Dafür haben wir gemeinsam mit unseren strategischen Partnern den ' +
+        '"Helferschein" ins Leben gerufen, der als Nachweis Eurer guten Taten dient und Euch perspektivisch bei vielen ' +
+        'Gelegenheiten positiv und vorteilhaft angerechnet werden wird.'
     ];
     this.teamheadline = 'Wer sind wir?';
     this.teamdescription =
-      'Wir sind ein wachsendes Team von Studierenden aus Konstanz in den Bereichen ' +
-      'Kommunikation, Design, Strategie und IT. Gemeinsam treffen wir uns regelmäßig und bringen die ' +
-      'Fortschritte der jeweiligen Bereiche zusammen. Das überaus große Engagement, die fachspezifischen ' +
-      'Kenntnisse und Erfahrungen der Teammitglieder, sowie die zielführenden Aktivitäten, lassen uns auf ein ' +
-      'zeitnahes Release von impact blicken.';
+      'Wir sind ein stetig wachsendes und bunt gemischtes Team von gut 20 Studierenden aus ' +
+      'Konstanz & Umgebung, holokratisch organisiert in den Kreisen Koordination, Strategie, Kommunikation, ' +
+      'Design und IT. Wir arbeiten teamübergreifend gemeinsam an den anstehenden Aufgaben und synchronisieren uns ' +
+      'mindestens alle 2 Wochen in der großen Runde. ' +
+      'Mit großem Engagement und Tatendrang sowie sich ergänzender, individueller Fähigkeiten und ' +
+      'Erfahrungen kommen wir der Umsetzung unserer Vision stetig näher.';
     this.teamMembers = [
-      new TeamMember('Tobias', '../../../assets/images/portraits/Tobi.jpg', '#c004d9', 'Gründer & Entwicklung'),
-      new TeamMember('Fabian', '../../../assets/images/portraits/Fabian.jpg', '#5a13f2', 'Koordination & Produkt'),
-      new TeamMember('Julia', '../../../assets/images/portraits/Julia.jpg', '#1b78f2', 'Kommunikation'),
+      new TeamMember('Tobias', '../../../assets/images/portraits/Tobi.jpg', '#c004d9', 'Initiator, Entwicklung & Strategie'),
+      new TeamMember('Fabian', '../../../assets/images/portraits/Fabian.jpg', '#5a13f2', 'Co-Initiator, Koordination & Produkt'),
+      new TeamMember('Julia', '../../../assets/images/portraits/Julia.jpg', '#1b78f2', 'Koordination & Kommunikation'),
       new TeamMember('Michael', '../../../assets/images/portraits/Michael.jpg', '#5a13f2', 'Kommunikation & Strategie'),
       new TeamMember('Patrick', '../../../assets/images/portraits/Patrick.jpg', '#1b78f2', 'Kommunikation & Social Media'),
       new TeamMember('Emine', '../../../assets/images/portraits/Emine.jpg', '#1b78f2', 'Design'),
