@@ -1,10 +1,6 @@
 @use 'src/styles.desktop';
 @import "../../../../node_modules/bootstrap";
 
-.desktop-container, .mobile-container {
-  background-color: #f8f7f7;
-}
-
 .header {
   width: 100%;
   height: 100vh;
