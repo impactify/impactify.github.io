@@ -1,17 +1,11 @@
 import { Injectable } from '@angular/core';
 
-@Injectable({
-  providedIn: 'root'
-})
+@Injectable({ providedIn: 'any' })
 export class ApplicationStateService {
-  private isMobileResolution: boolean;
+  private readonly isMobileResolution: boolean;
 
   constructor() {
-    if (window.innerWidth < 768) {
-      this.isMobileResolution = true;
-    } else {
-      this.isMobileResolution = false;
-    }
+    this.isMobileResolution = window.innerWidth < 768;
   }
 
   public getIsMobileResolution(): boolean {

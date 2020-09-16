@@ -1,10 +1,10 @@
-<div class="desktop-container" *ngIf="!isMobileResolution; else mobileContainer">
+<div style="background-color: #f8f7f7;" *ngIf="!isMobileResolution; else mobileContainer">
   <app-navbar-desktop></app-navbar-desktop>
   <app-landingpage-desktop></app-landingpage-desktop>
   <app-footer></app-footer>
 </div>
 
-<ng-template class="mobile-container" #mobileContainer>
+<ng-template style="background-color: #f8f7f7;" #mobileContainer>
   <app-navbar-mobile></app-navbar-mobile>
   <app-landingpage-mobile></app-landingpage-mobile>
   <app-footer></app-footer>
