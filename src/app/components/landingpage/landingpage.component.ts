@@ -8,8 +8,7 @@ import { LandingpageComponentModel } from './landingpage.component.model';
 
 @Component({
   selector: 'app-landingpage',
-  templateUrl: './landingpage.component.html',
-  styleUrls: ['./landingpage.component.desktop.scss']
+  templateUrl: './landingpage.component.html'
 })
 export class LandingpageComponent implements OnInit {
   private model: LandingpageComponentModel;
