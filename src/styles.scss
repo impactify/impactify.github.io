@@ -64,8 +64,8 @@ h1 {
   background-color: #4b4b4b !important;
 }
 
-.carousel-dot-active {
-  background-color: #4b4b4b !important;
+.carousel-dots {
+  bottom: -10px !important;
 }
 
 .carousel-dot {
@@ -75,6 +75,10 @@ h1 {
   height: 7px !important;
   margin: 0 3px 0 3px !important;
   border: none !important;
+}
+
+.carousel-dot-active {
+  background-color: #4b4b4b !important;
 }
 
 .navbar {
