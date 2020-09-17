@@ -1,31 +1,35 @@
 @use 'src/styles.desktop';
+@import "../../../../node_modules/bootstrap";
 
-.organisations {
-  padding: 20vh 5vw 10vh 5vw;
-  background-color: #f8f7f7;
-}
+@include media-breakpoint-up(md) {
 
-.organisations {
-  background-image: url("../../../assets/Illus/background_orga.png");
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: contain;
-  background-attachment: scroll;
-}
+  .organisations {
+    padding: 20vh 5vw 10vh 5vw;
+    background-color: #f8f7f7;
+  }
 
-.organisations img {
-  height: 15rem;
-  display: block;
-  margin: 0 auto 20% auto;
-}
+  .organisations {
+    background-image: url("../../../assets/Illus/background_orga.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-attachment: scroll;
+  }
 
-.organisations-button {
-  background-color: #c010d9 !important;
-  color: #ffffff !important;
-  margin-top: 80px;
-}
+  .organisations img {
+    height: 15rem;
+    display: block;
+    margin: 0 auto 20% auto;
+  }
 
-.organisations-button:hover {
-  background-color: #ffffff !important;
-  color: #c010d9 !important;
+  .organisations-button {
+    background-color: #c010d9 !important;
+    color: #ffffff !important;
+    margin-top: 80px;
+  }
+
+  .organisations-button:hover {
+    background-color: #ffffff !important;
+    color: #c010d9 !important;
+  }
 }
