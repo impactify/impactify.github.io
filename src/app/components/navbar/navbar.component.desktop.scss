@@ -1,86 +1,90 @@
-nav {
-  position: fixed;
-  left: 0;
-  right: 0;
-  height: 50px;
-  z-index: 1;
-  text-align: center;
-  background-color: #ffffff;
-  color: #222;
-  border-radius: 100px;
-  width: 45rem;
-  margin: 2em auto 0 auto;
-  transition: top 0.3s;
-  box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.16);
-}
+@import "../../../../node_modules/bootstrap";
 
-nav ul {
-  margin-block-start: 0em !important;
-  margin-block-end: 0em !important;
-}
+@include media-breakpoint-up(md) {
 
-nav ul li {
-  display: inline-block;
-  list-style-type: none;
-  height: 100%;
-  float: left;
-  font-size: 16px;
-  font-family: Varela Round, serif;
-}
+  nav {
+    position: fixed;
+    left: 0;
+    right: 0;
+    height: 50px;
+    z-index: 1;
+    text-align: center;
+    background-color: #ffffff;
+    color: #222;
+    border-radius: 100px;
+    width: 45rem;
+    margin: 2em auto 0 auto;
+    transition: top 0.3s;
+    box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.16);
+  }
 
-li.seperator {
-  position: relative;
-}
+  nav ul {
+    margin-block-start: 0em !important;
+    margin-block-end: 0em !important;
+  }
 
-li.seperator:after {
-  content: '';
-  height: 50%;
-  width: 1px;
-  position: absolute;
-  left: 0;
-  top: 25%;
-  background-color: #a5a5a5;
-}
+  nav ul li {
+    display: inline-block;
+    list-style-type: none;
+    height: 100%;
+    float: left;
+    font-size: 16px;
+    font-family: Varela Round, serif;
+  }
 
-nav ul li a {
-  font-size: 1.2em;
-  color: #000000;
-}
+  li.seperator {
+    position: relative;
+  }
 
-nav ul li a:hover {
-  color: #c010d9;
-}
+  li.seperator:after {
+    content: '';
+    height: 50%;
+    width: 1px;
+    position: absolute;
+    left: 0;
+    top: 25%;
+    background-color: #a5a5a5;
+  }
 
-nav ul li
-{
-  padding: 1em 1.2em;
-}
+  nav ul li a {
+    font-size: 1.2em;
+    color: #000000;
+  }
 
-.logoLink {
-  position: relative;
-  max-width: 100%;
-  max-height: 60px !important;
-}
+  nav ul li a:hover {
+    color: #c010d9;
+  }
 
-.logoLink img {
-  position: relative;
-  width: auto;
-  padding-right: 1em;
-  height: 36px;
-  margin-top: 7px;
-  margin-left: -1em;
-}
+  nav ul li {
+    padding: 1em 1.2em;
+  }
 
-.logoLink img:after {
-  height: 80%;
-  width: 100%;
-  position: absolute;
-  content: "";
-  top: 10%;
-  left: 0;
-  background-color: transparent;
-}
+  .logoLink {
+    position: relative;
+    max-width: 100%;
+    max-height: 60px !important;
+  }
 
-li:first-child {
-  padding: 0 !important;
+  .logoLink img {
+    position: relative;
+    width: auto;
+    padding-right: 1em;
+    height: 36px;
+    margin-top: 7px;
+    margin-left: -1em;
+  }
+
+  .logoLink img:after {
+    height: 80%;
+    width: 100%;
+    position: absolute;
+    content: "";
+    top: 10%;
+    left: 0;
+    background-color: transparent;
+  }
+
+  li:first-child {
+    padding: 0 !important;
+  }
 }

@@ -1,31 +1,35 @@
 @use 'src/styles.desktop';
+@import "../../../../node_modules/bootstrap";
 
-.sponsoring {
-  padding: 20vh 5vw 10vh 5vw;
-  background-color: #f8f7f7;
-}
+@include media-breakpoint-up(md) {
 
-.sponsoring {
-  background-image: url("../../../assets/Illus/background_sponsor.png");
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: contain;
-  background-attachment: scroll;
-}
+  .sponsoring {
+    padding: 20vh 5vw 10vh 5vw;
+    background-color: #f8f7f7;
+  }
 
-.sponsoring img {
-  height: 15rem;
-  display: block;
-  margin: 0 auto 20% auto;
-}
+  .sponsoring {
+    background-image: url("../../../assets/Illus/background_sponsor.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-attachment: scroll;
+  }
 
-.sponsoring-button {
-  background-color: #c010d9 !important;
-  color: #ffffff !important;
-  margin-top: 80px;
-}
+  .sponsoring img {
+    height: 15rem;
+    display: block;
+    margin: 0 auto 20% auto;
+  }
 
-.sponsoring-button:hover {
-  background-color: #ffffff !important;
-  color: #c010d9 !important;
+  .sponsoring-button {
+    background-color: #c010d9 !important;
+    color: #ffffff !important;
+    margin-top: 80px;
+  }
+
+  .sponsoring-button:hover {
+    background-color: #ffffff !important;
+    color: #c010d9 !important;
+  }
 }

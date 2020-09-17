@@ -1,22 +1,26 @@
 @use 'src/styles.mobile';
+@import "../../../../node_modules/bootstrap";
 
-.organisations {
-  padding: 8vh 0 5vh 0;
-  background-color: #f7f7f7;
-}
+@include media-breakpoint-down(md) {
 
-.organisations-container {
-  width: 100%;
-  padding: 0vh 10vw 0vh 10vw;
-}
+  .organisations {
+    padding: 8vh 0 5vh 0;
+    background-color: #f7f7f7;
+  }
 
-.organisations-container img {
-  height: 10rem;
-  margin: 0 auto 20px auto;
-}
+  .organisations-container {
+    width: 100%;
+    padding: 0vh 10vw 0vh 10vw;
+  }
 
-.organisations-button {
-  background-color: #ffffff !important;
-  color: #c010d9 !important;
-  margin-top: 50px;
+  .organisations-container img {
+    height: 10rem;
+    margin: 0 auto 20px auto;
+  }
+
+  .organisations-button {
+    background-color: #ffffff !important;
+    color: #c010d9 !important;
+    margin-top: 50px;
+  }
 }

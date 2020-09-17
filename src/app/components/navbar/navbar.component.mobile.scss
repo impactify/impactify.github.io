@@ -1,18 +1,23 @@
-.nav-logo {
-  height: 40px;
-  vertical-align: middle;
-  margin: 0 0.5rem 0 0.5rem ;
-}
+@import "../../../../node_modules/bootstrap";
 
-.navbar-items {
-  font-family: Varela Round, serif;
-  font-size: 18px;
-  font-weight: normal;
-  font-stretch: normal;
-  font-style: normal;
-  line-height: 1.22;
-  letter-spacing: normal;
-  color: #000000;
-  margin-left: 47px;
-}
+@include media-breakpoint-down(md) {
 
+  .nav-logo {
+    height: 40px;
+    vertical-align: middle;
+    margin: 0 0.5rem 0 0.5rem;
+  }
+
+  .navbar-items {
+    font-family: Varela Round, serif;
+    font-size: 18px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.22;
+    letter-spacing: normal;
+    color: #000000;
+    margin-left: 47px;
+  }
+
+}
