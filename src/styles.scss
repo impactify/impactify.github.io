@@ -44,24 +44,24 @@ h1 {
   width: 1rem !important;
   height: 1rem !important;
   opacity: 1 !important;
-  position: absolute;
-  top: 20%;
+  position: absolute !important;
+  top: 20% !important;
 }
 
 .carousel-indicators {
-  bottom: -3rem;
+  bottom: -3rem !important;
 }
 
 .carousel-indicators li {
-  opacity: 1;
-  background-color: #cdd3d9;
+  opacity: 1 !important;
+  background-color: #cdd3d9 !important;
   width: 7px !important;
   height: 7px !important;
   margin: 0 6px 0 6px !important;
 }
 
 .carousel-indicators .active {
-  background-color: #4b4b4b;
+  background-color: #4b4b4b !important;
 }
 
 .carousel-dot-active {
@@ -69,8 +69,8 @@ h1 {
 }
 
 .carousel-dot {
-  opacity: 1;
-  background-color: #cdd3d9;
+  opacity: 1 !important;
+  background-color: #cdd3d9 !important;
   width: 7px !important;
   height: 7px !important;
   margin: 0 3px 0 3px !important;
