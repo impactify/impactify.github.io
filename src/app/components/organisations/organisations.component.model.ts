@@ -10,7 +10,7 @@ export class OrganisationComponentModel {
   constructor(private sanitizer: DomSanitizer) {
     this.organisationheadline = 'Eure Organisation möchte dabei sein?';
     this.ehrenamt = [
-      'Wir bringen frischen Wind',
+      'Wir bringen das Ehrenamt weiter',
       'Dem Ehrenamt fehlt es zunehmend an tragenden Schultern. Wir wollen das ändern. ' +
         'Die Plattform erleichtert Motivierten den Einstieg, nimmt Druck und Ängste, erweitert die Möglichkeiten, verpasst ' +
         'sozialem Engagement ein frischeres Image und steigert die Wertschätzung. ' +

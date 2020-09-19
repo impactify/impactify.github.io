@@ -18,7 +18,7 @@ export class SponsoringComponentModel {
         'bundesweite Vernetzung bieten.'
     ];
     this.profitieren = [
-      'Win-Win: Was können Sie von uns erwarten?',
+      'Sie profitieren ebenfalls',
       'Sie können ein gemeinnütziges Projekt unterstützen, welches soziales Engagement und dessen gesellschaftliche Anerkennung ' +
         'fördert und damit ein elementarer Bestandteil davon werden - ohne Ihre Spenden läuft bei uns buchstäblich nichts. ' +
         'Neben dem erfüllenden Gefühl, etwas Gutes zu tun, erhalten Sie von uns als Dankeschön einen prominenten Platz auf ' +
