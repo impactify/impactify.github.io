@@ -4,7 +4,6 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { ScullyLibModule } from '@scullyio/ng-lib';
 import { CarouselModule, NavbarModule, WavesModule } from 'angular-bootstrap-md';
 import { IvyCarouselModule } from 'angular-responsive-carousel';
-import { NgxGoogleAnalyticsModule, NgxGoogleAnalyticsRouterModule } from 'ngx-google-analytics';
 import { NgxPageScrollModule } from 'ngx-page-scroll';
 import { NgxPageScrollCoreModule } from 'ngx-page-scroll-core';
 import { AppRoutingModule } from './app-routing.module';
@@ -55,8 +54,8 @@ export class MyHammerConfig extends HammerGestureConfig {
   ],
   imports: [
     BrowserModule,
-    NgxGoogleAnalyticsModule.forRoot('UA-178533611-1'),
-    NgxGoogleAnalyticsRouterModule,
+    // NgxGoogleAnalyticsModule.forRoot('UA-178533611-1'),
+    // NgxGoogleAnalyticsRouterModule,
     AppRoutingModule,
     BrowserAnimationsModule,
     MaterialModule,
