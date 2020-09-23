@@ -1,7 +1,7 @@
-@use 'src/styles.mobile';
+@use '../../../styles-mobile';
 @import "../../../../node_modules/bootstrap";
 
-@include media-breakpoint-down(md) {
+@include media-breakpoint-down(sm) {
 
   .header {
     width: 100%;

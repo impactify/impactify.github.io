@@ -1,5 +1,17 @@
-@use 'src/styles.desktop';
+@use '../../../styles-desktop';
 @import "../../../../node_modules/bootstrap";
+
+@include media-breakpoint-only(md) {
+  .header {
+    width: 100%;
+    height: 100vh;
+    background-color: #5a22f2;
+    max-height: 550px;
+  }
+  .header .material-icons {
+    display: none;
+  }
+}
 
 @include media-breakpoint-up(md) {
 
@@ -11,12 +23,6 @@
 
   .header-container {
     padding: 15vh 0 15vh 0;
-    /*
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    */
   }
 
   .header-img {
@@ -70,7 +76,7 @@
 
   @include media-breakpoint-up(xl) {
     .header-text {
-      font: 400 140px Roboto, sans-serif;
+      font: 400 130px Roboto, sans-serif;
     }
   }
 

@@ -1,14 +1,18 @@
-@use 'src/styles.desktop';
+@use '../../../styles-desktop';
+@use '../../../styles-mobile';
+@import "../../../../node_modules/bootstrap";
 
-.impressum {
-  padding: 20vh 5vw 10vh 5vw;
-  background-color: #f8f7f7;
+@include media-breakpoint-up(md) {
+  .impressum {
+    padding: 15vh 5vw 10vh 5vw;
+    background-color: #f8f7f7;
+  }
 }
 
-li {
-  text-align: left;
-  font: 100 18px Roboto;
-  letter-spacing: 0px;
-  color: #2F2F2F;
-  opacity: 1;
+@include media-breakpoint-down(sm) {
+  .impressum {
+    padding: 10vh 5vw 10vh 5vw;
+    background-color: #f8f7f7;
+  }
 }
+

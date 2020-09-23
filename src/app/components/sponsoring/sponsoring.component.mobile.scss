@@ -1,8 +1,8 @@
-@use 'src/styles.mobile';
+@use '../../../styles-mobile';
 
 @import "../../../../node_modules/bootstrap";
 
-@include media-breakpoint-down(md) {
+@include media-breakpoint-down(sm) {
 
   .sponsoring {
     padding: 8vh 0 5vh 0;
