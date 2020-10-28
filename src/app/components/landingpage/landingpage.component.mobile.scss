@@ -46,7 +46,7 @@
     line-height: 1.2;
   }
 
-  .intro, .team {
+  .intro, .team, .insta {
     padding: 10vh 0 5vh 0;
     background-color: #f7f7f7;
   }
@@ -91,6 +91,7 @@
   .mitmachen-button {
     background-color: #c010d9;
     color: #ffffff !important;
+    box-shadow: 0px 10px 20px #00000029;
   }
 
   .mitmachen-button:hover {
@@ -106,6 +107,32 @@
 
   .mitmachen {
     padding-top: 5vh;
+  }
+
+  .insta-box {
+    padding: 10px;
+  }
+
+  .insta-feed {
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    padding: 10px;
+  }
+
+  .insta-img img {
+    height: 100%;
+    width: 100%;
+  }
+
+  .insta-img-description p, b {
+    font-size: 12px !important;
+  }
+
+  .insta-img-description p {
+    margin: 12px 0 2px 0 !important;
+    width: auto;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
   }
 
 }

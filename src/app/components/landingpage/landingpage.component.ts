@@ -3,7 +3,7 @@ import { MatSnackBar } from '@angular/material/snack-bar';
 import { DomSanitizer } from '@angular/platform-browser';
 import { Router } from '@angular/router';
 import * as AOS from 'aos';
-import { ApplicationStateService } from '../../application-state.service';
+import { ApplicationStateService } from '../../services/application-state.service';
 import { LandingpageComponentModel } from './landingpage.component.model';
 
 @Component({
@@ -15,11 +15,11 @@ export class LandingpageComponent implements OnInit {
   public myViewModel: LandingpageComponentModel;
 
   public isMobileResolution: boolean;
+  public instaFeed = [];
 
   constructor(private router: Router, private sanitizer: DomSanitizer, private applicationStateService: ApplicationStateService, private snackBar: MatSnackBar) {
     this.model = new LandingpageComponentModel(sanitizer);
     this.myViewModel = new LandingpageComponentModel(sanitizer);
-
     this.loadLandingpage();
     this.updateView();
     this.isMobileResolution = applicationStateService.getIsMobileResolution();

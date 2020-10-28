@@ -15,6 +15,8 @@ export class LandingpageComponentModel {
   public mitmachenheadline: string;
   public mitmachendescription: string;
   public mitmachenbutton: string;
+  public instaheadline: string;
+  public instadescription: string;
 
   constructor(private sanitizer: DomSanitizer) {
     this.headline = "What's your \n" + 'impact?';
@@ -71,6 +73,8 @@ export class LandingpageComponentModel {
       'Teil von impact! Wir freuen uns über jede Unterstützung für unser ambitioniertes Projekt. Ob als „freie ' +
       'MitarbeiterIn“ oder als Mitglied, Du kannst den Bereich und Umfang Deines Engagements selbst bestimmen.';
     this.mitmachenbutton = 'Kontaktiere uns';
+    this.instaheadline = 'Folge uns auf Instagram!';
+    this.instadescription = 'Bleib immer auf dem Laufenden durch unsere Social Media Accounts';
   }
 
   public clone(): LandingpageComponentModel {
@@ -88,6 +92,8 @@ export class LandingpageComponentModel {
     clonedModel.mitmachendescription = this.mitmachendescription;
     clonedModel.mitmachenheadline = this.mitmachenheadline;
     clonedModel.teamMembers = this.teamMembers;
+    clonedModel.instaheadline = this.instaheadline;
+    clonedModel.instadescription = this.instadescription;
     return clonedModel;
   }
 }

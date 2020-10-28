@@ -1,3 +1,4 @@
+import { HttpClientModule } from '@angular/common/http';
 import { Injectable, NgModule } from '@angular/core';
 import { BrowserModule, HammerGestureConfig, HammerModule, HAMMER_GESTURE_CONFIG } from '@angular/platform-browser';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
@@ -56,6 +57,7 @@ export class MyHammerConfig extends HammerGestureConfig {
     BrowserModule,
     // NgxGoogleAnalyticsModule.forRoot('UA-178533611-1'),
     // NgxGoogleAnalyticsRouterModule,
+    HttpClientModule,
     AppRoutingModule,
     BrowserAnimationsModule,
     MaterialModule,
