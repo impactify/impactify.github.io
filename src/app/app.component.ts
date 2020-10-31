@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 import { AppComponentModel } from './app.component.model';
-import { ApplicationStateService } from './application-state.service';
+import { ApplicationStateService } from './services/application-state.service';
 
 @Component({
   selector: 'app-root',

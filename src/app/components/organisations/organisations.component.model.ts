@@ -6,6 +6,7 @@ export class OrganisationComponentModel {
   public knoten: string[];
   public ergaenzen: string[];
   public organisationbutton: string;
+  public partnerheadline: string;
 
   constructor(private sanitizer: DomSanitizer) {
     this.organisationheadline = 'Eure Organisation möchte dabei sein?';
@@ -32,6 +33,7 @@ export class OrganisationComponentModel {
         'weshalb wir uns einen engen Austausch und langfristige Partnerschaften wünschen.'
     ];
     this.organisationbutton = 'Kontaktiert uns';
+    this.partnerheadline = 'Unsere Partner';
   }
 
   public clone(): OrganisationComponentModel {
@@ -41,6 +43,7 @@ export class OrganisationComponentModel {
     clonedModel.knoten = this.knoten;
     clonedModel.ergaenzen = this.ergaenzen;
     clonedModel.organisationbutton = this.organisationbutton;
+    clonedModel.partnerheadline = this.partnerheadline;
     return clonedModel;
   }
 }
