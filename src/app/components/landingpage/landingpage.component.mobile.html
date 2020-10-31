@@ -6,8 +6,8 @@
         <img alt="" src="../../../../assets/Illus/Header_alternativ.png">
       </div>
       <div class="col-">
-            <a mat-raised-button (click)="openSnackBar('Coming soon!', 'Close')" class="header-button button"
-                routerLinkActive="active">{{myViewModel.headerbutton[0]}}</a>
+        <a mat-raised-button (click)="openSnackBar('Coming soon!', 'Close')" class="header-button button"
+           routerLinkActive="active">{{myViewModel.headerbutton[0]}}</a>
       </div>
     </div>
   </div>
@@ -50,15 +50,15 @@
     </div>
     <div class="teammember-slide">
       <div class="row justify-content-center align-items-center align-content-center">
-        <carousel [dots]="true" [loop]="true" [arrows]="false" [cellsToShow]="3" [height]="160">
-          <div *ngFor="let teammember of myViewModel.teamMembers" class="carousel-cell">
+        <cdk-virtual-scroll-viewport orientation="horizontal" itemSize="50" class="teammembers-viewport">
+          <div *ngFor="let teammember of myViewModel.teamMembers" class="teammember-cell">
             <div class="teammember-img mx-auto" style="background-image: url({{ teammember.img }}); border-color: {{ teammember.color }} "></div>
             <div class="teammember-description">
               <p style="color: {{teammember.color}}; font-weight: bold">{{ teammember.name }}</p>
               <p style="color: {{teammember.color}}">{{ teammember.task }}</p>
             </div>
           </div>
-        </carousel>
+        </cdk-virtual-scroll-viewport>
       </div>
     </div>
   </div>

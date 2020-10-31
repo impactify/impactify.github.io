@@ -24,4 +24,27 @@
     margin-top: 50px;
     box-shadow: 0px 10px 20px #00000029;
   }
+
+  .partner-container {
+    margin-top: 30px;
+    padding: 0vh 10vw 0vh 10vw;
+  }
+
+  .partner {
+    padding: 10px;
+  }
+
+  .partner img {
+    height: auto;
+    max-width: 100%;
+    max-height: 80px;
+    -webkit-filter: grayscale(100%);
+    filter: grayscale(100%);
+    display: block;
+  }
+
+  .partner img:hover {
+    -webkit-filter: grayscale(0%);
+    filter: grayscale(0%);
+  }
 }

@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { ChangeDetectionStrategy, Component, ViewEncapsulation } from '@angular/core';
 import { MatSnackBar } from '@angular/material/snack-bar';
 import { DomSanitizer } from '@angular/platform-browser';
 import { Router } from '@angular/router';
@@ -9,7 +9,9 @@ import { LandingpageComponent } from './landingpage.component';
 @Component({
   selector: 'app-landingpage-mobile',
   templateUrl: './landingpage.component.mobile.html',
-  styleUrls: ['./landingpage.component.mobile.scss']
+  styleUrls: ['./landingpage.component.mobile.scss'],
+  encapsulation: ViewEncapsulation.None,
+  changeDetection: ChangeDetectionStrategy.OnPush
 })
 export class LandingpageMobileComponent extends LandingpageComponent {
   public instaFeed = [];

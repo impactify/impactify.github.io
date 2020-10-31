@@ -1,3 +1,4 @@
+import { ScrollingModule } from '@angular/cdk/scrolling';
 import { HttpClientModule } from '@angular/common/http';
 import { Injectable, NgModule } from '@angular/core';
 import { BrowserModule, HammerGestureConfig, HammerModule, HAMMER_GESTURE_CONFIG } from '@angular/platform-browser';
@@ -69,7 +70,8 @@ export class MyHammerConfig extends HammerGestureConfig {
     IvyCarouselModule,
     NavbarModule,
     NgxPageScrollModule,
-    NgxPageScrollCoreModule
+    NgxPageScrollCoreModule,
+    ScrollingModule
   ],
   providers: [
     {

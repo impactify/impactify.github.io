@@ -4,7 +4,7 @@
 @include media-breakpoint-up(md) {
 
   .organisations {
-    padding: 20vh 5vw 10vh 5vw;
+    padding: 20vh 5vw 5vh 5vw;
     background-color: #f8f7f7;
   }
 
@@ -16,7 +16,7 @@
     background-attachment: scroll;
   }
 
-  .organisations img {
+  .organisations-container img {
     height: 100%;
     display: block;
     margin: 0 auto 20%;
@@ -35,5 +35,27 @@
   .organisations-button:hover {
     background-color: #ffffff !important;
     color: #c010d9 !important;
+  }
+
+  .partner-container {
+    margin-top: 50px;
+  }
+
+  .partner {
+    padding: 20px;
+  }
+
+  .partner img {
+    height: auto;
+    max-width: 100%;
+    max-height: 150px;
+    -webkit-filter: grayscale(100%);
+    filter: grayscale(100%);
+    display: block;
+  }
+
+  .partner img:hover {
+    -webkit-filter: grayscale(0%);
+    filter: grayscale(0%);
   }
 }

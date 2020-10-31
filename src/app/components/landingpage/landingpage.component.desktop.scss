@@ -9,7 +9,7 @@
     max-height: 550px;
   }
   .header .material-icons {
-    display: none;
+    display: none !important;
   }
 }
 
@@ -117,7 +117,7 @@
   }
 
   .teammember {
-    margin: 10px;
+    padding: 10px;
   }
 
   .teammember-description {
