@@ -87,6 +87,19 @@
 </section>
 
 <section class="insta">
-  <div class="insta-container" data-aos="fade-up">
+  <div class="container insta-container" data-aos="fade-up">
+    <div class="section-headline">{{myViewModel.instaheadline}}</div>
+    <div class="row">
+      <div *ngFor="let instafeed of instaFeed" class="col-lg-3 col-6 insta-box">
+        <div class="insta-feed">
+          <a href="{{instafeed.permalink}}" target="_blank">
+            <div class="insta-img mx-auto"><img src="{{instafeed.imageurl}}"></div>
+            <div class="insta-img-description">
+              <p><b>yourimpact.eu </b>{{instafeed.caption}}</p>
+            </div>
+          </a>
+        </div>
+      </div>
+    </div>
   </div>
 </section>

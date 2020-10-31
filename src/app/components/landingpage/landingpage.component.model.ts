@@ -15,6 +15,8 @@ export class LandingpageComponentModel {
   public mitmachenheadline: string;
   public mitmachendescription: string;
   public mitmachenbutton: string;
+  public instaheadline: string;
+  public instadescription: string;
 
   constructor(private sanitizer: DomSanitizer) {
     this.headline = "What's your \n" + 'impact?';
@@ -51,18 +53,26 @@ export class LandingpageComponentModel {
       new TeamMember('Julia', '../../../assets/images/portraits/Julia.jpg', '#1b78f2', 'Koordination & Kommunikation'),
       new TeamMember('Michael', '../../../assets/images/portraits/Michael.jpg', '#5a13f2', 'Kommunikation & Strategie'),
       new TeamMember('Patrick', '../../../assets/images/portraits/Patrick.jpg', '#1b78f2', 'Kommunikation & Social Media'),
+      new TeamMember('Lukas', '../../../assets/images/portraits/noimage.png', '#c004d9', 'Entwicklung'),
       new TeamMember('Emine', '../../../assets/images/portraits/Emine.jpg', '#1b78f2', 'Design'),
+      new TeamMember('Sophia', '../../../assets/images/portraits/noimage.png', '#c004d9', 'Entwicklung'),
       new TeamMember('Ena', '../../../assets/images/portraits/Ena.jpg', '#1b78f2', 'Design'),
       new TeamMember('Florian', '../../../assets/images/portraits/noimage.png', '#5a13f2', 'Recht'),
       new TeamMember('Marino', '../../../assets/images/portraits/noimage.png', '#5a13f2', 'Strategie & Produkt'),
       new TeamMember('Lena', '../../../assets/images/portraits/Lena.jpg', '#5a13f2', 'Strategie & Produkt'),
       new TeamMember('Lara', '../../../assets/images/portraits/Lara.jpg', '#c004d9', 'Social Media'),
+      new TeamMember('Sonja', '../../../assets/images/portraits/noimage.png', '#c004d9', 'Entwicklung'),
       new TeamMember('Paula', '../../../assets/images/portraits/Paula.jpg', '#1b78f2', 'Design'),
+      new TeamMember('Sahin', '../../../assets/images/portraits/noimage.png', '#c004d9', 'Entwicklung'),
       new TeamMember('Nikolai', '../../../assets/images/portraits/Nico.jpg', '#c004d9', 'Entwicklung'),
       new TeamMember('Lena', '../../../assets/images/portraits/noimage.png', '#c004d9', 'Entwicklung'),
+      new TeamMember('Julia', '../../../assets/images/portraits/noimage.png', '#c004d9', 'Entwicklung'),
+      new TeamMember('Konstantin', '../../../assets/images/portraits/noimage.png', '#c004d9', 'Entwicklung'),
+      new TeamMember('Sonja', '../../../assets/images/portraits/noimage.png', '#c004d9', 'Entwicklung'),
       new TeamMember('Tilman', '../../../assets/images/portraits/noimage.png', '#c004d9', 'Entwicklung'),
       new TeamMember('Fabian', '../../../assets/images/portraits/noimage.png', '#5a13f2', 'Strategie'),
       new TeamMember('Kevin', '../../../assets/images/portraits/noimage.png', '#c004d9', 'Entwicklung'),
+      new TeamMember('Ben', '../../../assets/images/portraits/noimage.png', '#c004d9', 'Entwicklung'),
       new TeamMember('Bastian', '../../../assets/images/portraits/noimage.png', '#c004d9', 'Entwicklung')
     ];
     this.mitmachenheadline = 'Du möchtest mitmachen?';
@@ -71,6 +81,8 @@ export class LandingpageComponentModel {
       'Teil von impact! Wir freuen uns über jede Unterstützung für unser ambitioniertes Projekt. Ob als „freie ' +
       'MitarbeiterIn“ oder als Mitglied, Du kannst den Bereich und Umfang Deines Engagements selbst bestimmen.';
     this.mitmachenbutton = 'Kontaktiere uns';
+    this.instaheadline = 'Folge uns auf Instagram!';
+    this.instadescription = 'Bleib immer auf dem Laufenden durch unsere Social Media Accounts';
   }
 
   public clone(): LandingpageComponentModel {
@@ -88,6 +100,8 @@ export class LandingpageComponentModel {
     clonedModel.mitmachendescription = this.mitmachendescription;
     clonedModel.mitmachenheadline = this.mitmachenheadline;
     clonedModel.teamMembers = this.teamMembers;
+    clonedModel.instaheadline = this.instaheadline;
+    clonedModel.instadescription = this.instadescription;
     return clonedModel;
   }
 }

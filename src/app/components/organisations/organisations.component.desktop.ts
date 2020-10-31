@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
 import { DomSanitizer } from '@angular/platform-browser';
 import { Router } from '@angular/router';
-import { ApplicationStateService } from '../../application-state.service';
+import { ApplicationStateService } from '../../services/application-state.service';
 import { OrganisationsComponent } from './organisations.component';
 
 @Component({
