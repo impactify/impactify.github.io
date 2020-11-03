@@ -27,6 +27,7 @@
     background-color: #ffffff !important;
     color: #c010d9 !important;
     margin-top: 50px !important;
+    box-shadow: none !important;
   }
 
   .header-button-tooltip {
@@ -105,7 +106,6 @@
   .mitmachen-button {
     background-color: #c010d9;
     color: #ffffff !important;
-    box-shadow: 0px 10px 20px #00000029;
   }
 
   .mitmachen-button:hover {
