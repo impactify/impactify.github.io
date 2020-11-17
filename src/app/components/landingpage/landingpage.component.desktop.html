@@ -13,7 +13,10 @@
         </div>
       </div>
       <div class="header-img col-7">
-        <img alt="Illu_Header" src="./assets/Illus/Header_alternativ.png">
+        <picture>
+          <source srcset="./assets/Illus/Header_alternativ.webp" type="image/webp">
+          <img alt="impact Illustration" src="./assets/Illus/Header_alternativ.png">
+        </picture>
       </div>
     </div>
   </div>
@@ -26,21 +29,30 @@
     <div class="row">
       <div class="col-md-4">
         <div class="px-2">
-          <img class="intro-img" alt="illu-vernetzen" src="./assets/Illus/Illu_Vernetzen.png">
+          <picture>
+            <source srcset="./assets/Illus/Illu_Vernetzen.webp" type="image/webp">
+            <img class="intro-img" alt="impact Illustration Vernetzen" src="./assets/Illus/Illu_Vernetzen.png">
+          </picture>
           <b>{{myViewModel.functionvernetzen[0]}}</b>
           <p>{{myViewModel.functionvernetzen[1]}}</p>
         </div>
       </div>
       <div class="col-md-4">
         <div class="px-2">
-          <img class="intro-img" alt="illu-matchen" src="./assets/Illus/Illu_Matchen.png">
+          <picture>
+            <source srcset="./assets/Illus/Illu_Matchen.webp" type="image/webp">
+            <img class="intro-img" alt="impact Illustration Matching" src="./assets/Illus/Illu_Matchen.png">
+          </picture>
           <b>{{myViewModel.functionmatch[0]}}</b>
           <p>{{myViewModel.functionmatch[1]}}</p>
         </div>
       </div>
       <div class="col-md-4">
         <div class="px-2">
-          <img class="intro-img" alt="illu-belohnen" src="./assets/Illus/Illu_Anerkennen.png">
+          <picture>
+            <source srcset="./assets/Illus/Illu_Anerkennen.webp" type="image/webp">
+            <img class="intro-img" alt="impact illustration Anerkennung" src="./assets/Illus/Illu_Anerkennen.png">
+          </picture>
           <b>{{myViewModel.functionbelohnen[0]}}</b>
           <p>{{myViewModel.functionbelohnen[1]}}</p>
         </div>
@@ -59,7 +71,10 @@
     </div>
     <div class="teammebers row justify-content-center">
       <div *ngFor="let teammember of myViewModel.teamMembers" class="col-lg-2 col-md-3 col-sm-4 teammember">
-        <div class="teammember-img mx-auto" style="background-image: url({{ teammember.img }}); border-color: {{ teammember.color }} "></div>
+        <picture>
+          <source srcset="{{ teammember.img }}.webp" type="image/webp">
+          <img  class="teammember-img mx-auto"  style="border-color: {{ teammember.color }}" alt="impact Mitglied" src="{{ teammember.img }}.jpg">
+        </picture>
         <div class="teammember-description">
           <p style="color: {{teammember.color}}; font-weight: bold">{{ teammember.name }}</p>
           <p style="color: {{teammember.color}}">{{ teammember.task }}</p>
@@ -71,7 +86,10 @@
     <div class="section-headline">{{myViewModel.mitmachenheadline}}</div>
     <div class="row align-items-start">
       <div class="col-lg-3 col-5">
-        <img alt="Illu_Mitmachen" src="./assets/Illus/Illu_Mitmachen.png">
+        <picture>
+          <source srcset="./assets/Illus/Illu_Mitmachen.webp" type="image/webp">
+          <img alt="Mitmachen bei impact" src="./assets/Illus/Illu_Mitmachen.png">
+        </picture>
       </div>
       <div class="col-lg-6 col-7">
         <p>{{myViewModel.mitmachendescription}}</p>
@@ -88,12 +106,32 @@
 
 <section class="insta">
   <div class="container insta-container" data-aos="fade-up">
-    <div class="section-headline">{{myViewModel.instaheadline}}</div>
+    <div class="section-headline">impact in den Medien</div>
+    <div class="partner-container container">
+      <div class="row justify-content-center align-items-center align-self-center">
+        <div class="col-lg-4 col-6 partner">
+          <a target="_blank" href="https://www.suedkurier.de/region/kreis-konstanz/konstanz/partnervermittlung-fuer-hilfsbereite-die-app-impact-soll-ehrenamtliches-engagement-vereinfachen;art372448,10555865">
+            <img class="mx-auto" src="./assets/images/partners/Suedkurier.svg" alt="Stadt Konstanz, ein Partner von impact">
+          </a>
+        </div>
+        <div class="col-lg-3 col-6 partner">
+          <a target="_blank" href="https://www.htwg-konstanz.de/hochschule/magazin/wie-beim-onlinedating-matching-plattform-fuer-soziales-engagement/">
+            <img class="mx-auto" src="./assets/images/partners/HTWG.svg" alt="SaveMe Konstanz, ein Partner von impact">
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="insta">
+  <div class="container insta-container" data-aos="fade-up">
+    <div class="section-headline">{{myViewModel.instaheadline}} <a target="_blank" style="color: #5a22f2 !important;" href="https://www.instagram.com/yourimpact.eu/">Instagram!</a></div>
     <div class="row">
       <div *ngFor="let instafeed of instaFeed" class="col-lg-3 col-6 insta-box">
         <div class="insta-feed">
           <a href="{{instafeed.permalink}}" target="_blank">
-            <div class="insta-img mx-auto"><img src="{{instafeed.imageurl}}"></div>
+            <div class="insta-img mx-auto"><img alt="Instagram-Feed von impact" src="{{instafeed.imageurl}}"></div>
             <div class="insta-img-description">
               <p><b>yourimpact.eu </b>{{instafeed.caption}}</p>
             </div>

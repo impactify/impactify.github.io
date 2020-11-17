@@ -48,30 +48,30 @@ export class LandingpageComponentModel {
       'Mit großem Engagement und Tatendrang sowie sich ergänzender, individueller Fähigkeiten und ' +
       'Erfahrungen kommen wir der Umsetzung unserer Vision stetig näher.';
     this.teamMembers = [
-      new TeamMember('Tobias', '../../../assets/images/portraits/Tobi.jpg', '#c004d9', 'Initiator, Entwicklung & Strategie'),
-      new TeamMember('Fabian', '../../../assets/images/portraits/Fabian.jpg', '#5a13f2', 'Co-Initiator, Koordination & Produkt'),
-      new TeamMember('Julia', '../../../assets/images/portraits/Julia.jpg', '#1b78f2', 'Koordination & Kommunikation'),
-      new TeamMember('Michael', '../../../assets/images/portraits/Michael.jpg', '#5a13f2', 'Kommunikation & Strategie'),
-      new TeamMember('Patrick', '../../../assets/images/portraits/Patrick.jpg', '#1b78f2', 'Kommunikation & Social Media'),
-      new TeamMember('Lukas', '../../../assets/images/portraits/noimage.png', '#c004d9', 'Entwicklung'),
-      new TeamMember('Emine', '../../../assets/images/portraits/Emine.jpg', '#1b78f2', 'Design'),
-      new TeamMember('Sophia', '../../../assets/images/portraits/noimage.png', '#c004d9', 'Entwicklung'),
-      new TeamMember('Ena', '../../../assets/images/portraits/Ena.jpg', '#1b78f2', 'Design'),
-      new TeamMember('Florian', '../../../assets/images/portraits/noimage.png', '#5a13f2', 'Recht'),
-      new TeamMember('Lena', '../../../assets/images/portraits/Lena.jpg', '#5a13f2', 'Strategie & Produkt'),
-      new TeamMember('Lara', '../../../assets/images/portraits/Lara.jpg', '#c004d9', 'Social Media'),
-      new TeamMember('Paula', '../../../assets/images/portraits/Paula.jpg', '#1b78f2', 'Design'),
-      new TeamMember('Sahin', '../../../assets/images/portraits/noimage.png', '#c004d9', 'Entwicklung'),
-      new TeamMember('Nikolai', '../../../assets/images/portraits/Nico.jpg', '#c004d9', 'Entwicklung'),
-      new TeamMember('Lena', '../../../assets/images/portraits/noimage.png', '#c004d9', 'Entwicklung'),
-      new TeamMember('Julia', '../../../assets/images/portraits/noimage.png', '#c004d9', 'Entwicklung'),
-      new TeamMember('Konstantin', '../../../assets/images/portraits/noimage.png', '#c004d9', 'Entwicklung'),
-      new TeamMember('Sonja', '../../../assets/images/portraits/noimage.png', '#c004d9', 'Entwicklung'),
-      new TeamMember('Tilman', '../../../assets/images/portraits/noimage.png', '#c004d9', 'Entwicklung'),
-      new TeamMember('Fabian', '../../../assets/images/portraits/noimage.png', '#5a13f2', 'Strategie'),
-      new TeamMember('Kevin', '../../../assets/images/portraits/noimage.png', '#c004d9', 'Entwicklung'),
-      new TeamMember('Ben', '../../../assets/images/portraits/noimage.png', '#c004d9', 'Entwicklung'),
-      new TeamMember('Bastian', '../../../assets/images/portraits/noimage.png', '#c004d9', 'Entwicklung')
+      new TeamMember('Tobias', '../../../assets/images/portraits/Tobi', '#c004d9', 'Initiator, Entwicklung & Strategie'),
+      new TeamMember('Fabian', '../../../assets/images/portraits/Fabian', '#5a13f2', 'Co-Initiator, Koordination & Produkt'),
+      new TeamMember('Julia', '../../../assets/images/portraits/Julia', '#1b78f2', 'Koordination & Kommunikation'),
+      new TeamMember('Michael', '../../../assets/images/portraits/Michael', '#5a13f2', 'Kommunikation & Strategie'),
+      new TeamMember('Patrick', '../../../assets/images/portraits/Patrick', '#1b78f2', 'Kommunikation & Social Media'),
+      new TeamMember('Lukas', '../../../assets/images/portraits/noimage', '#c004d9', 'Entwicklung'),
+      new TeamMember('Emine', '../../../assets/images/portraits/Emine', '#1b78f2', 'Design'),
+      new TeamMember('Sophia', '../../../assets/images/portraits/noimage', '#c004d9', 'Entwicklung'),
+      new TeamMember('Ena', '../../../assets/images/portraits/Ena', '#1b78f2', 'Design'),
+      new TeamMember('Florian', '../../../assets/images/portraits/noimage', '#5a13f2', 'Recht'),
+      new TeamMember('Lena', '../../../assets/images/portraits/Lena', '#5a13f2', 'Strategie & Produkt'),
+      new TeamMember('Lara', '../../../assets/images/portraits/Lara', '#c004d9', 'Social Media'),
+      new TeamMember('Paula', '../../../assets/images/portraits/Paula', '#1b78f2', 'Design'),
+      new TeamMember('Sahin', '../../../assets/images/portraits/noimage', '#c004d9', 'Entwicklung'),
+      new TeamMember('Nikolai', '../../../assets/images/portraits/Nico', '#c004d9', 'Entwicklung'),
+      new TeamMember('Lena', '../../../assets/images/portraits/noimage', '#c004d9', 'Entwicklung'),
+      new TeamMember('Julia', '../../../assets/images/portraits/noimage', '#c004d9', 'Entwicklung'),
+      new TeamMember('Konstantin', '../../../assets/images/portraits/noimage', '#c004d9', 'Entwicklung'),
+      new TeamMember('Sonja', '../../../assets/images/portraits/noimage', '#c004d9', 'Entwicklung'),
+      new TeamMember('Tilman', '../../../assets/images/portraits/noimage', '#c004d9', 'Entwicklung'),
+      new TeamMember('Fabian', '../../../assets/images/portraits/noimage', '#5a13f2', 'Strategie'),
+      new TeamMember('Kevin', '../../../assets/images/portraits/noimage', '#c004d9', 'Entwicklung'),
+      new TeamMember('Ben', '../../../assets/images/portraits/noimage', '#c004d9', 'Entwicklung'),
+      new TeamMember('Bastian', '../../../assets/images/portraits/noimage', '#c004d9', 'Entwicklung')
     ];
     this.mitmachenheadline = 'Du möchtest mitmachen?';
     this.mitmachendescription =
@@ -79,7 +79,7 @@ export class LandingpageComponentModel {
       'Teil von impact! Wir freuen uns über jede Unterstützung für unser ambitioniertes Projekt. Ob als „freie ' +
       'MitarbeiterIn“ oder als Mitglied, Du kannst den Bereich und Umfang Deines Engagements selbst bestimmen.';
     this.mitmachenbutton = 'Kontaktiere uns';
-    this.instaheadline = 'Folge uns auf Instagram!';
+    this.instaheadline = 'Folge uns auf ';
     this.instadescription = 'Bleib immer auf dem Laufenden durch unsere Social Media Accounts';
   }
 
