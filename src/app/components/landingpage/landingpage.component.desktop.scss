@@ -81,7 +81,7 @@
     }
   }
 
-  .intro, .team, .insta {
+  .intro, .team, .insta, .media {
     padding: 10vh 5vw 10vh 5vw;
     background-color: #f8f7f7;
   }
@@ -136,11 +136,19 @@
     border-radius: 50%;
     background-size: cover;
     border-style: solid;
+    display: block;
   }
 
 
   .team-description p, .mitmachen-container p {
     text-align: center;
+  }
+
+  .team .material-icons {
+    margin: 0 5px 0 5px;
+    display: inline;
+    vertical-align: text-bottom;
+    font-size: 22px;
   }
 
   .mitmachen-container {
@@ -161,6 +169,24 @@
   .mitmachen-container img {
     display: block;
     height: 250px
+  }
+
+  .media-article {
+    padding: 30px;
+  }
+
+  .media-article img {
+    height: auto;
+    max-width: 100%;
+    max-height: 150px;
+    -webkit-filter: grayscale(100%);
+    filter: grayscale(100%)  contrast(0.3);;
+    display: block;
+  }
+
+  .media-article img:hover {
+    -webkit-filter: grayscale(0%);
+    filter: grayscale(0%);
   }
 
   .insta-box {

@@ -5,9 +5,8 @@ import { Injectable } from '@angular/core';
   providedIn: 'root'
 })
 export class InstagramFeedService {
-  private access_token = 'IGQVJVU2FrcTllaGpsRmswWjIyU2FZARGprOGN5SWM0MTNhWmxad1VrcDhFS1dIb0xuQmxNVmJ3T2U1SzNOMkc5TkwzVWFVTll4NjBEaGVrWHJ5UFkzS3ZAJR21TbjNCbGlxRTV3a3ZAR';
+  private access_token = 'IGQVJXVlphX29lWFFVM094TkFDQ3FjV3lnM1VxWExqMnl6blFZAY2x1RkZALandvRnkxazF4b1pjS3hXZAUZALalJXOTMwSk0xbE1ZAVkRlNHFtdFl1N3E3QXNTdkJhTVVlWHVLdV9IRlRB';
   private media_url = 'https://graph.instagram.com/17841440123434114/media?fields=id,media_type,media_url,caption,username,permalink,timestamp&access_token=' + this.access_token;
-  private refresh_access_token_url = 'https://graph.instagram.com/refresh_access_token?grant_type=ig_refresh_token&access_token=' + this.access_token;
   public instaFeed = [];
 
   constructor(private http: HttpClient) {}
@@ -30,18 +29,5 @@ export class InstagramFeedService {
         }
       });
     return this.instaFeed;
-  }
-
-  public refresh_access_token() {
-    this.access_token = 'IGQVJVU2FrcTllaGpsRmswWjIyU2FZARGprOGN5SWM0MTNhWmxad1VrcDhFS1dIb0xuQmxNVmJ3T2U1SzNOMkc5TkwzVWFVTll4NjBEaGVrWHJ5UFkzS3ZAJR21TbjNCbGlxRTV3a3ZAR';
-    setInterval(myTimer, 300000);
-    function myTimer() {
-      this.http
-        .get(this.refresh_access_token_url)
-        .toPromise()
-        .then((data) => {
-          this.access_token = data['access_token'];
-        });
-    }
   }
 }

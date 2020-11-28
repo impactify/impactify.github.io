@@ -4,21 +4,30 @@
     <mdb-carousel class="carousel slide carousel-fade" [animation]="'slide'" [interval]="'0'">
       <mdb-carousel-item>
         <div class="view w-100">
-          <img class="d-block" alt="illu-vernetzen" src="./assets/Illus/Illu_Ziele.png">
+          <picture>
+            <source srcset="./assets/Illus/Illu_Ziele.webp" type="image/webp">
+            <img class="d-block" alt="impact Illustration Unterstützung" src="./assets/Illus/Illu_Ziele.png">
+          </picture>
           <b>{{myViewModel.untersuetzung[0]}}</b>
           <p>{{myViewModel.untersuetzung[1]}}</p>
         </div>
       </mdb-carousel-item>
       <mdb-carousel-item>
         <div class="view w-100 intro-slide">
-          <img class="d-block" alt="illu-matchen" src="./assets/Illus/Illu_winwin.png">
+          <picture>
+            <source srcset="./assets/Illus/Illu_winwin.webp" type="image/webp">
+            <img class="d-block" alt="impact Illustration Win Win" src="./assets/Illus/Illu_winwin.png">
+          </picture>
           <b>{{myViewModel.profitieren[0]}}</b>
           <p>{{myViewModel.profitieren[1]}}</p>
         </div>
       </mdb-carousel-item>
       <mdb-carousel-item>
         <div class="view w-100 intro-slide">
-          <img class="d-block" alt="illu-belohnen" src="./assets/Illus/Illu_Sparschwein.png">
+          <picture>
+            <source srcset="./assets/Illus/Illu_Sparschwein.webp" type="image/webp">
+            <img class="d-block" alt="impact Illustration Sparschwein" src="./assets/Illus/Illu_Sparschwein.png">
+          </picture>
           <b>{{myViewModel.spende[0]}}</b>
           <p>{{myViewModel.spende[1]}}</p>
         </div>
