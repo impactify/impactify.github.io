@@ -26,11 +26,13 @@ export class OrganisationComponentModel {
         'Wir nehmen Euch Organisationsaufwand ab, damit Ihr Euch aufs Helfen konzentrieren könnt.'
     ];
     this.ergaenzen = [
-      'Wir ergänzen uns',
-      'Unser Team hat das notwendige Know-How, das ambitionierte Projekt umzusetzen. ' +
-        'Um Euch bestmöglich zu unterstützen, brauchen wir jedoch Eure langjährige Praxiserfahrung im Ehrenamt als Input. ' +
-        'Wir verstehen uns gewissermaßen als "Dienstleister" für Euren so wertvollen Einsatz für die Gesellschaft, ' +
-        'weshalb wir uns einen engen Austausch und langfristige Partnerschaften wünschen.'
+      'Wir ergänzen uns - werdet unser Partner',
+      'Die Vorfreude reicht Euch nicht und Ihr wollt Euch schon jetzt einbringen? ' +
+        'Dann begleitet uns auf unserem Weg und werdet unser Partner! ' +
+        'Unser Team hat das notwendige Know-How, das ambitionierte Projekt umzusetzen, ' +
+        'jedoch brauchen wir Eure langjährige Praxiserfahrung als Expert*innen im Ehrenamt. ' +
+        'Ein enger Austausch und eine langfristige ' +
+        'Zusammenarbeit geben uns den nötigen Input für eine optimale Entwicklung der Plattform. '
     ];
     this.organisationbutton = 'Kontaktiert uns';
     this.partnerheadline = 'Unsere Partner';
