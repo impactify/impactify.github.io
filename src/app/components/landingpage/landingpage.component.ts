@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { MatSnackBar } from '@angular/material/snack-bar';
 import { DomSanitizer } from '@angular/platform-browser';
-import { Router } from '@angular/router';
+import { NavigationEnd, Router } from '@angular/router';
 import * as AOS from 'aos';
 import { ApplicationStateService } from '../../services/application-state.service';
 import { LandingpageComponentModel } from './landingpage.component.model';
@@ -40,5 +40,11 @@ export class LandingpageComponent implements OnInit {
   }
   ngOnInit(): void {
     AOS.init();
+    this.router.events.subscribe((evt) => {
+      if (!(evt instanceof NavigationEnd)) {
+        return;
+      }
+      window.scrollTo(0, 0);
+    });
   }
 }
