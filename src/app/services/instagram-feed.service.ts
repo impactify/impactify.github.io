@@ -5,7 +5,7 @@ import { Injectable } from '@angular/core';
   providedIn: 'root'
 })
 export class InstagramFeedService {
-  private access_token = 'IGQVJXVlphX29lWFFVM094TkFDQ3FjV3lnM1VxWExqMnl6blFZAY2x1RkZALandvRnkxazF4b1pjS3hXZAUZALalJXOTMwSk0xbE1ZAVkRlNHFtdFl1N3E3QXNTdkJhTVVlWHVLdV9IRlRB';
+  private access_token = 'IGQVJYX3E3WlFsNFFwRmJFSXVlTVJtY3EwX1FXQ3AzenY4R1ZASZAGFOV3RZASXNoMFUzdGhkcFFiUHNoQi04blN5aDVvNFBSSVEzWTVNTXhfemVtQkliTGtTR0I5SnBFN1J0Wjk1bExn';
   private media_url = 'https://graph.instagram.com/17841440123434114/media?fields=id,media_type,media_url,caption,username,permalink,timestamp&access_token=' + this.access_token;
   public instaFeed = [];
 
