@@ -1,7 +1,11 @@
 <header class="header">
   <div class="header-container container">
     <div class="row">
-      <div class="header-text col-8">{{myViewModel.headline}}</div>
+      <div class="header-text col-8" id="headline">
+          <!--
+          {{myViewModel.headline}}
+          -->
+      </div>
     </div>
     <div class="row justify-content-around align-items-end">
       <div class="col-5">
@@ -20,14 +24,13 @@
       </div>
     </div>
   </div>
-  <a pageScroll href="#intro" class="material-icons">keyboard_arrow_down</a>
 </header>
 
-<section id="intro" class="intro">
-  <div data-aos="fade-up" class="intro-container container">
-    <div class="section-headline">{{myViewModel.functionheadline}}</div>
+<section data-aos="zoom-in" id="intro" class="intro">
+  <div class="intro-container container">
+    <div data-aos="fade-down" class="section-headline">{{myViewModel.functionheadline}}</div>
     <div class="row">
-      <div class="col-md-4">
+      <div data-aos="fade-right" data-aos-delay="400" class="col-md-4">
         <div class="px-2">
           <picture>
             <source srcset="./assets/Illus/Illu_Vernetzen.webp" type="image/webp">
@@ -37,7 +40,7 @@
           <p>{{myViewModel.functionvernetzen[1]}}</p>
         </div>
       </div>
-      <div class="col-md-4">
+      <div data-aos="fade-up" data-aos-delay="700" class="col-md-4">
         <div class="px-2">
           <picture>
             <source srcset="./assets/Illus/Illu_Matchen.webp" type="image/webp">
@@ -47,7 +50,7 @@
           <p>{{myViewModel.functionmatch[1]}}</p>
         </div>
       </div>
-      <div class="col-md-4">
+      <div data-aos="fade-left" data-aos-delay="1000" class="col-md-4">
         <div class="px-2">
           <picture>
             <source srcset="./assets/Illus/Illu_Anerkennen.webp" type="image/webp">
@@ -70,7 +73,7 @@
       </div>
     </div>
     <div class="teammebers row justify-content-center">
-      <div *ngFor="let teammember of myViewModel.teamMembers" class="col-lg-2 col-md-3 col-sm-4 teammember">
+      <div data-aos="fade-up" data-aos-offset="300" *ngFor="let teammember of myViewModel.teamMembers" class="col-lg-2 col-md-3 col-sm-4 teammember">
         <picture>
           <source srcset="{{ teammember.img }}.webp" type="image/webp">
           <img  class="teammember-img mx-auto"  style="border-color: {{ teammember.color }}" alt="impact Mitglied" src="{{ teammember.img }}.jpg">
