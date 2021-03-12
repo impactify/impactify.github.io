@@ -1,10 +1,9 @@
 <header class="header">
   <div class="header-container container">
     <div class="row">
-      <div class="header-text col-8" id="headline">
-          <!--
+      <div class="header-text col-8" >
+
           {{myViewModel.headline}}
-          -->
       </div>
     </div>
     <div class="row justify-content-around align-items-end">
@@ -24,6 +23,7 @@
       </div>
     </div>
   </div>
+  <a pageScroll [pageScrollAdjustHash]="true" href="#intro" class="material-icons arrow">keyboard_arrow_down</a>
 </header>
 
 <section data-aos="zoom-in" id="intro" class="intro">
@@ -64,8 +64,8 @@
   </div>
 </section>
 
-<section class="team">
-  <div data-aos="fade-up" class="team-container container">
+<section class="team" data-aos="zoom-in">
+  <div data-aos="fade-up" data-aos-delay="200" class="team-container container">
     <div class="section-headline">{{myViewModel.teamheadline}}</div>
     <div class="row justify-content-center">
       <div class="team-description col-lg-6 col-10">
@@ -73,7 +73,7 @@
       </div>
     </div>
     <div class="teammebers row justify-content-center">
-      <div data-aos="fade-up" data-aos-offset="300" *ngFor="let teammember of myViewModel.teamMembers" class="col-lg-2 col-md-3 col-sm-4 teammember">
+      <div *ngFor="let teammember of myViewModel.teamMembers" class="col-lg-2 col-md-3 col-sm-4 teammember">
         <picture>
           <source srcset="{{ teammember.img }}.webp" type="image/webp">
           <img  class="teammember-img mx-auto"  style="border-color: {{ teammember.color }}" alt="impact Mitglied" src="{{ teammember.img }}.jpg">
@@ -87,7 +87,7 @@
       </div>
     </div>
   </div>
-  <div id="mitmachen" class="container mitmachen-container">
+  <div data-aos="fade-up" data-aos-delay="200" id="mitmachen" class="container mitmachen-container">
     <div class="section-headline">{{myViewModel.mitmachenheadline}}</div>
     <div class="row align-items-start">
       <div class="col-lg-3 col-5">
@@ -110,7 +110,7 @@
 </section>
 
 <section class="insta">
-  <div class="container insta-container" data-aos="fade-up">
+  <div class="container insta-container" data-aos="fade-up" data-aos-delay="200">
     <div class="section-headline">{{myViewModel.instaheadline}} <a target="_blank" style="color: #5a22f2 !important;" href="https://www.instagram.com/yourimpact.eu/">Instagram!</a></div>
     <div class="row">
       <div *ngFor="let instafeed of instaFeed" class="col-lg-3 col-6 insta-box">
@@ -128,7 +128,7 @@
 </section>
 
 <section class="media">
-  <div class="container media-container" data-aos="fade-up">
+  <div class="container media-container" data-aos="fade-up" data-aos-delay="200">
     <div class="section-headline">{{myViewModel.mediaheadline}}</div>
     <div class="media-logo-container container">
       <div class="row justify-content-center align-items-center align-self-center">
