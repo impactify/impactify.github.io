@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, HostListener } from '@angular/core';
 import { DomSanitizer } from '@angular/platform-browser';
 import { Router } from '@angular/router';
 import { ApplicationStateService } from '../../services/application-state.service';
@@ -20,6 +20,13 @@ export class SponsoringComponent {
     this.loadSponsoring();
     this.updateView();
     this.isMobileResolution = applicationStateService.getIsMobileResolution();
+  }
+
+  @HostListener('window:resize', ['$event'])
+  onResize(): void {
+    if (window.innerWidth <= 768) {
+      window.location.reload();
+    }
   }
 
   private loadSponsoring(): void {
