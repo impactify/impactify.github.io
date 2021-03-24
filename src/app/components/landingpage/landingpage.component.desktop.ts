@@ -1,9 +1,7 @@
-import { DOCUMENT } from '@angular/common';
-import { AfterViewInit, Component, Inject, ViewEncapsulation } from '@angular/core';
+import { AfterViewInit, Component, ViewEncapsulation } from '@angular/core';
 import { MatSnackBar } from '@angular/material/snack-bar';
 import { DomSanitizer } from '@angular/platform-browser';
 import { Router } from '@angular/router';
-import { PageScrollService } from 'ngx-page-scroll-core';
 import { ApplicationStateService } from '../../services/application-state.service';
 import { InstagramFeedService } from '../../services/instagram-feed.service';
 import { LandingpageComponent } from './landingpage.component';
@@ -18,15 +16,7 @@ declare let anime: any;
 export class LandingpageDesktopComponent extends LandingpageComponent implements AfterViewInit {
   public instaFeed = [];
 
-  constructor(
-    router: Router,
-    sanitizer: DomSanitizer,
-    applicationStateService: ApplicationStateService,
-    snackBar: MatSnackBar,
-    private instagramFeedService: InstagramFeedService,
-    private pageScrollService: PageScrollService,
-    @Inject(DOCUMENT) private document: any
-  ) {
+  constructor(router: Router, sanitizer: DomSanitizer, applicationStateService: ApplicationStateService, snackBar: MatSnackBar, private instagramFeedService: InstagramFeedService) {
     super(router, sanitizer, applicationStateService, snackBar);
     this.instaFeed = this.instagramFeedService.getInstaFeed();
   }

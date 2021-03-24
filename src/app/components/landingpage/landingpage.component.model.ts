@@ -4,6 +4,7 @@ import { TeamMember } from './teamMember';
 export class LandingpageComponentModel {
   public headline: string;
   public headerbutton: string[];
+  public headerdescription: string;
   public functionheadline: string;
   public functionvernetzen: string[];
   public functionmatch: string[];
@@ -22,6 +23,7 @@ export class LandingpageComponentModel {
   constructor(private sanitizer: DomSanitizer) {
     this.headline = "What's your \n" + 'impact?';
     this.headerbutton = ['Zur Anwendung', 'Coming soon'];
+    this.headerdescription = 'impact soll das Zuhause für gemeinnützige Aktionen werden, indem Privatperson oder ' + 'Organisationen mit engagierten Bürger:innen vereint werden.';
     this.functionheadline = 'Wie funktioniert impact?';
     this.functionvernetzen = [
       'Wir vernetzten Euch',
@@ -61,7 +63,6 @@ export class LandingpageComponentModel {
       new TeamMember('Lena', '../../../assets/images/portraits/Lena', '#5a13f2', 'Strategie & Produkt', 'null'),
       new TeamMember('Lara', '../../../assets/images/portraits/Lara', '#c004d9', 'Social Media', 'null'),
       new TeamMember('Paula', '../../../assets/images/portraits/Paula', '#1b78f2', 'Design', 'null'),
-      new TeamMember('Sahin', '../../../assets/images/portraits/noimage', '#c004d9', 'Entwicklung', 'null'),
       new TeamMember('Nikolai', '../../../assets/images/portraits/Nico', '#c004d9', 'Entwicklung', 'null'),
       new TeamMember('Lena', '../../../assets/images/portraits/noimage', '#c004d9', 'Entwicklung', 'null'),
       new TeamMember('Julia', '../../../assets/images/portraits/noimage', '#c004d9', 'Entwicklung', 'null'),
@@ -69,15 +70,14 @@ export class LandingpageComponentModel {
       new TeamMember('Sonja', '../../../assets/images/portraits/noimage', '#c004d9', 'Entwicklung', 'null'),
       new TeamMember('Tilman', '../../../assets/images/portraits/noimage', '#c004d9', 'Entwicklung', 'null'),
       new TeamMember('Fabian', '../../../assets/images/portraits/noimage', '#5a13f2', 'Strategie', 'null'),
-      new TeamMember('Kevin', '../../../assets/images/portraits/noimage', '#c004d9', 'Entwicklung', 'null'),
-      new TeamMember('Ben', '../../../assets/images/portraits/noimage', '#c004d9', 'Entwicklung', 'null'),
-      new TeamMember('Bastian', '../../../assets/images/portraits/noimage', '#c004d9', 'Entwicklung', 'null')
+      new TeamMember('Jakob', '../../../assets/images/portraits/noimage', '#c004d9', 'Entwicklung', 'null'),
+      new TeamMember('Roman', '../../../assets/images/portraits/noimage', '#1b78f2', 'Kommunikation', 'null')
     ];
     this.mitmachenheadline = 'Du möchtest mitmachen?';
     this.mitmachendescription =
       'Du bist von unserem Vorhaben begeistert und möchtest Dich einbringen? Dann werde ' +
       'Teil von impact! Wir freuen uns über jede Unterstützung für unser ambitioniertes Projekt. Ob als „freie ' +
-      'Mitarbeiter*in“ oder als Mitglied, Du kannst den Bereich und Umfang Deines Engagements selbst bestimmen.';
+      'Mitarbeiter:in“ oder als Mitglied, Du kannst den Bereich und Umfang Deines Engagements selbst bestimmen.';
     this.mitmachenbutton = 'Kontaktiere uns';
     this.instaheadline = 'Folge uns auf ';
     this.instadescription = 'Bleib immer auf dem Laufenden durch unsere Social Media Accounts';

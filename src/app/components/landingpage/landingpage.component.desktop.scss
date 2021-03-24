@@ -11,6 +11,15 @@
   .header .material-icons {
     display: none !important;
   }
+  .header-description {
+    font: normal normal normal 12px Roboto !important;
+  }
+  .header-button {
+    margin-top: 10px !important;
+  }
+  .header-container {
+    padding: 125px 0 125px 0 !important;
+  }
 }
 
 @include media-breakpoint-up(md) {
@@ -70,14 +79,25 @@
     text-align: left;
     font: 400 9vw Roboto, sans-serif;
     letter-spacing: 0px;
-    color: #FFFFFF;
+    color: #F4F4F4;;
     opacity: 1;
     line-height: 1.2;
+  }
+
+  .header-description {
+    text-align: left;
+    font: normal normal normal 16px Roboto;
+    letter-spacing: 0px;
+    color: #F7F7F7;
+    opacity: 1;
   }
 
   @include media-breakpoint-up(xl) {
     .header-text {
       font: 400 130px Roboto, sans-serif;
+    }
+    .header-description {
+      font: normal normal normal 20px Roboto;
     }
   }
 

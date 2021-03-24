@@ -2,16 +2,14 @@
   <div class="header-container container">
     <div class="row">
       <div class="header-text col-8" >
-
           {{myViewModel.headline}}
       </div>
     </div>
-    <div class="row justify-content-around align-items-end">
+    <div class="row justify-content-around align-items-center">
       <div class="col-5">
         <div class="row justify-content-center">
-          <div class="col-12">
-            <a mat-raised-button disabled class="header-button button" matTooltip="{{myViewModel.headerbutton[1]}}"
-               matTooltipClass="header-button-tooltip" routerLinkActive="active">{{myViewModel.headerbutton[0]}}</a>
+          <div class="col-12 header-description">
+            {{myViewModel.headerdescription}}
           </div>
         </div>
       </div>
@@ -20,6 +18,12 @@
           <source srcset="./assets/Illus/Header_alternativ.webp" type="image/webp">
           <img alt="impact Illustration" src="./assets/Illus/Header_alternativ.png">
         </picture>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-12">
+        <a mat-raised-button disabled class="header-button button" matTooltip="{{myViewModel.headerbutton[1]}}"
+           matTooltipClass="header-button-tooltip" routerLinkActive="active">{{myViewModel.headerbutton[0]}}</a>
       </div>
     </div>
   </div>

@@ -6,7 +6,7 @@ import { Component } from '@angular/core';
   styleUrls: ['./navbar.component.mobile.scss']
 })
 export class NavbarMobileComponent {
-  scroll(el: HTMLElement) {
+  scroll(el: HTMLElement): void {
     el.scrollIntoView({ behavior: 'smooth' });
   }
 }
