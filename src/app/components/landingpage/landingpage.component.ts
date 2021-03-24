@@ -1,4 +1,4 @@
-import { Component, HostListener, OnInit } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { MatSnackBar } from '@angular/material/snack-bar';
 import { DomSanitizer } from '@angular/platform-browser';
 import { NavigationEnd, Router } from '@angular/router';
@@ -25,12 +25,14 @@ export class LandingpageComponent implements OnInit {
     this.isMobileResolution = applicationStateService.getIsMobileResolution();
   }
 
+  /*
   @HostListener('window:resize', ['$event'])
   onResize(): void {
     if (window.innerWidth <= 768) {
       window.location.reload();
     }
   }
+   */
 
   openSnackBar(message: string, action: string): void {
     this.snackBar.open(message, action, {
