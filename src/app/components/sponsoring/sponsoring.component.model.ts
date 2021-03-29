@@ -14,7 +14,7 @@ export class SponsoringComponentModel {
       'impact verfolgt ausschließlich gemeinnützige Ziele und wird von jungen Studierenden getragen. ' +
         'Der Verein verfügt über keine nennenswerten Einkommensquellen. Gleichzeitig ist der Betrieb der App mit erheblichen ' +
         'Kosten verbunden, ebenso die anfänglich nötigen Werbemaßnahmen. ' +
-        'Nur so können wir den Nutzer*innen das versprochene, einzigartige Nutzungserlebnis und die erfolgsentscheidende, ' +
+        'Nur so können wir den Nutzer:innen das versprochene, einzigartige Nutzungserlebnis und die erfolgsentscheidende, ' +
         'bundesweite Vernetzung bieten.'
     ];
     this.profitieren = [

@@ -23,7 +23,7 @@ export class LandingpageComponentModel {
   constructor(private sanitizer: DomSanitizer) {
     this.headline = "What's your \n" + 'impact?';
     this.headerbutton = ['Zur Anwendung', 'Coming soon'];
-    this.headerdescription = 'impact soll das Zuhause für gemeinnützige Aktionen werden, indem Privatperson oder ' + 'Organisationen mit engagierten Bürger:innen vereint werden.';
+    this.headerdescription = 'Die App impact \uFF0D ein Zuhause für gemeinnützige Aktionen, auf der Person oder Organisationen mit engagierten Bürger:innen vereint werden.';
     this.functionheadline = 'Wie funktioniert impact?';
     this.functionvernetzen = [
       'Wir vernetzten Euch',
