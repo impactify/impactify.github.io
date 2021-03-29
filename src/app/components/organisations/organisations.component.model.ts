@@ -30,7 +30,7 @@ export class OrganisationComponentModel {
       'Die Vorfreude reicht Euch nicht und Ihr wollt Euch schon jetzt einbringen? ' +
         'Dann begleitet uns auf unserem Weg und werdet unser Partner! ' +
         'Unser Team hat das notwendige Know-How, das ambitionierte Projekt umzusetzen, ' +
-        'jedoch brauchen wir Eure langjährige Praxiserfahrung als Expert*innen im Ehrenamt. ' +
+        'jedoch brauchen wir Eure langjährige Praxiserfahrung als Expert:innen im Ehrenamt. ' +
         'Ein enger Austausch und eine langfristige ' +
         'Zusammenarbeit geben uns den nötigen Input für eine optimale Entwicklung der Plattform. '
     ];
