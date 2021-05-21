@@ -23,7 +23,7 @@ export class LandingpageComponentModel {
   constructor(private sanitizer: DomSanitizer) {
     this.headline = "What's your \n" + 'impact?';
     this.headerbutton = ['Zur Anwendung', 'Coming soon'];
-    this.headerdescription = 'Die App impact \uFF0D ein Zuhause für gemeinnützige Aktionen, auf der Person oder Organisationen mit engagierten Bürger:innen vereint werden.';
+    this.headerdescription = 'Die App impact \uFF0D ein Zuhause für gemeinnützige Aktionen, auf der Personen oder Organisationen mit engagierten Bürger:innen vereint werden.';
     this.functionheadline = 'Wie funktioniert impact?';
     this.functionvernetzen = [
       'Wir vernetzten Euch',
@@ -55,7 +55,6 @@ export class LandingpageComponentModel {
       new TeamMember('Fabian', '../../../assets/images/portraits/Fabian', '#5a13f2', 'Co-Initiator, Koordination & Produkt', 'fabian@yourimpact.eu'),
       new TeamMember('Julia', '../../../assets/images/portraits/Julia', '#1b78f2', 'Koordination & Kommunikation', 'julia@yourimpact.eu'),
       new TeamMember('Michael', '../../../assets/images/portraits/Michael', '#5a13f2', 'Kommunikation & Strategie', 'michael@yourimpact.eu'),
-      new TeamMember('Patrick', '../../../assets/images/portraits/Patrick', '#1b78f2', 'Kommunikation & Social Media', 'null'),
       new TeamMember('Emine', '../../../assets/images/portraits/Emine', '#1b78f2', 'Design', 'null'),
       new TeamMember('Sophia', '../../../assets/images/portraits/noimage', '#c004d9', 'Entwicklung', 'null'),
       new TeamMember('Ena', '../../../assets/images/portraits/Ena', '#1b78f2', 'Design', 'null'),
