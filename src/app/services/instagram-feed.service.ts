@@ -17,7 +17,7 @@ export class InstagramFeedService {
       .toPromise()
       .then((data) => {
         console.log(data);
-        const feed = data['data'];
+        const feed = data.data;
         for (let i = 0; i < 4; i++) {
           if (feed.hasOwnProperty(i)) {
             this.instaFeed[i] = {

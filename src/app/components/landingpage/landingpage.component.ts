@@ -47,6 +47,7 @@ export class LandingpageComponent implements OnInit {
   private updateView(): void {
     this.myViewModel = this.model.clone();
   }
+
   ngOnInit(): void {
     AOS.init();
     this.router.events.subscribe((evt) => {
