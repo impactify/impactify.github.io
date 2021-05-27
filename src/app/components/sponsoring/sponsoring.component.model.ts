@@ -32,6 +32,7 @@ export class SponsoringComponentModel {
     ];
     this.sponsorbutton = 'Kontaktieren Sie uns';
   }
+
   public clone(): SponsoringComponentModel {
     const clonedModel: SponsoringComponentModel = new SponsoringComponentModel(this.sanitizer);
     clonedModel.sponsorheadline = this.sponsorheadline;
