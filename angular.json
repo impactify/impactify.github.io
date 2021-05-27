@@ -24,7 +24,6 @@
               "src/favicon.ico"
             ],
             "styles": [
-              "src/custom-theme.scss",
               "node_modules/aos/dist/aos.css",
               "src/styles.scss"
             ],
