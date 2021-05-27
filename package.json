@@ -8,7 +8,7 @@
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
-    "build": "ng build --configuration production --build-optimizer=true",
+    "build": "ng build --prod",
     "scully": "scully --noPrompt",
     "scully:gen": "npm run build && scully",
     "scully:serve": "scully serve",
